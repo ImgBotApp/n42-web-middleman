@@ -6,6 +6,7 @@ source 'https://rails-assets.org'
 gem "middleman", "~>3.3.6"
 gem "middleman-livereload"
 gem "middleman-deploy"
+gem "middleman-autoprefixer"
 
 gem "slim"
 gem "sass"
@@ -14,4 +15,4 @@ gem "sass"
 gem 'bootstrap-sass', require: false
 gem 'rails-assets-ionicons'
 gem 'rails-assets-jquery'
-
+gem 'rails-assets-roboto-fontface'

@@ -4,6 +4,7 @@ html lang="en"
     meta charset="utf-8"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1" name="viewport"
+    link rel="shortcut icon" href="#{image_path('favicon.png')}"
     title= current_page.data.title || "42"
     = stylesheet_link_tag "all"
     /! HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -13,6 +14,15 @@ html lang="en"
 
   body class=page_classes
     = yield
+
+    footer.footer
+      .container
+        .row
+          .col-sm-12
+            p.text-center
+              = link_to "Imprint", "#"
+              |&nbsp;|&nbsp;
+              = link_to "Privacy", "#"
 
     = javascript_include_tag "all"
 

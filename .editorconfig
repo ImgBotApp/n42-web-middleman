@@ -11,3 +11,6 @@ insert_final_newline = true
 
 [*.md]
 indent_size = 4
+
+[*.slim]
+trim_trailing_whitespace = false

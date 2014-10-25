@@ -40,6 +40,8 @@ configure :development do
   activate :livereload
 end
 
+activate :autoprefixer
+
 activate :deploy do |deploy|
   deploy.method = :ftp
   deploy.host = "ftp.ddengler.eu"

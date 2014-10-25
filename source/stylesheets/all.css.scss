@@ -5,55 +5,90 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "compass/css3/font-face";
+
+@include font-face("Roboto-Regular", font-files("roboto-fontface/Roboto-Regular.ttf", "roboto-fontface/Roboto-Regular.eot", "roboto-fontface/Roboto-Regular.svg"));
+@include font-face("Roboto-Light", font-files("roboto-fontface/Roboto-Light.ttf", "roboto-fontface/Roboto-Light.eot", "roboto-fontface/Roboto-Light.svg"));
+
+$region-light-color: #fff;
+$region-dark-color: #ececec;
+$default-space: 30px;
 
 body {
-  text-align: center;
-  font-family: sans-serif; }
+  font-family: "Roboto-Light", sans-serif;
+}
+
+img {
+  width: 100%;
+}
 
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  padding: 350px 0 10px;
-  margin: 0; }
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 3em;
+  color: #6c6c6c;
+}
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+h2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.8em;
+}
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+.row {
+  p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6c6c6c;
+  }
+}
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+.icon-medium {
+  font-size: $default-space * 1.5;
+}
+
+.icon-large {
+  font-size: $default-space * 2;
+}
+
+.font-red {
+  color: $red-color;
+}
+
+.navbar-brand {
+  padding: 11px 16px;
+}
+
+.region-light {
+  background: $region-light-color;
+}
+
+.region-dark {
+  background: $region-dark-color;
+  color: #fff;
+}
+
+.space-header {
+  margin-top: 90px;
+}
+
+.space-l {
+  margin-bottom: $default-space;
+}
+
+.space-xl {
+  margin-bottom: $default-space * 2;
+}
+
+
+.footer {
+  font-size: 0.8em;
+  color: $gray-light;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+
+// Bootstrap overrides
+
+.btn-lg, .btn-group-lg > .btn {
+  border-radius: 0;
 }

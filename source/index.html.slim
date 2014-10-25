@@ -6,17 +6,199 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container-fluid
     /! Brand and toggle get grouped for better mobile display
     .navbar-header
-      button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+      button.navbar-toggle.collapsed data-target="#main-nav" data-toggle="collapse" type="button"
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="#" Number 42
+      a.navbar-brand href="#"
+        = image_tag "logo.svg", alt: "Number42"
 
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      ul.nav.navbar-nav
+    #main-nav.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
         li.active
-          a href="#"  Link
+          a href="#" Leistungen
         li
-          a href="#"  Link
+          a href="#" Team
+        li
+          a href="#" Prozess
+        li
+          a href="#" Kontakt
+
+.region
+  = image_tag "http://placekitten.com/g/1000/440"
+
+
+.region.region-light
+  .container
+    .row.text-center
+      .col-md-12
+        .space-xl
+        h1.space-l Leistungen
+    .row.text-center
+      .col-sm-6.col-md-4.col-md-offset-1
+        .space-l
+        i.icon.icon-large.ion-ios7-monitor-outline.font-red.space-l
+        h2 Web Entwicklung
+        p.space-xl
+          | Wir entwickeln aufwändige und komplexe Web-Anwendungen oder Backendsysteme
+          |  für mobile Apps. Einfachkeit, Wartbarkeit und Skalierbarkeit sind unsere
+          |  Ansprüche.
+
+      .col-sm-6.col-md-4.col-md-offset-2
+        .space-l
+        i.icon.icon-large.ion-ios7-keypad-outline.font-red.space-l
+        h2 App Entwicklung
+        p.space-xl= lorem.sentence
+
+
+.region
+  .container
+    .row
+      .col-md-12
+        .space-xl
+        h1.space-l.text-center Team
+
+    .row
+      .col-sm-6.col-md-3
+        .space-l
+        = image_tag "http://placekitten.com/g/400/300"
+        h2 Daniel Dengler
+        p Gründer
+        p.space-xl
+          = link_to "dden@num42.de", "#"
+
+      .col-sm-6.col-md-3
+        .space-l
+        = image_tag "http://placekitten.com/g/400/300"
+        h2 David Kraus
+        p Entwickler
+        p.space-xl
+          = link_to "wlut@num42.de", "#"
+
+      .col-sm-6.col-md-3
+        .space-l
+        = image_tag "http://placekitten.com/g/400/300"
+        h2 Wolfgang Lutz
+        p Entwickler
+        p.space-xl
+          = link_to "dkra@num42.de", "#"
+
+      .col-sm-6.col-md-3
+        .space-l
+        = image_tag "http://placekitten.com/g/400/300"
+        h2 Andreas Solleder
+        p Entwickler
+        p.space-xl
+          = link_to "asol@num42.de", "#"
+
+    .row
+      .col-md-12
+        .space-xl
+          p
+            | Wir arbeiten von unserem Studio in Regensburg, wie von jedem anderen Ort. 
+            | Die frei Arbeitsplatzwahl wird bei uns groß geschrieben und wir verbringen ... TODO!!!!! 
+            = link_to "jobs@num42.de", "#"
+
+.region.region-light
+  .container
+    .row.text-center
+      .col-md-12
+        .space-xl
+        h1.space-l Prozess
+    .row.text-center
+      .col-md-3
+        .space-l
+        i.icon.icon-large.ion-ios7-compose-outline.font-red.space-l
+        h2 Beratung
+        p.space-xl= lorem.sentence
+      .col-md-3
+        .space-l
+        i.icon.icon-large.ion-ios7-gear-outline.font-red.space-l
+        h2 Entwicklung
+        p.space-xl= lorem.sentence
+      .col-md-3
+        .space-l
+        i.icon.icon-large.ion-ios7-analytics-outline.font-red.space-l
+        h2 Test
+        p.space-xl= lorem.sentence
+      .col-md-3
+        .space-l
+        i.icon.icon-large.ion-ios7-speedometer-outline.font-red.space-l
+        h2 Betreuung
+        p.space-xl= lorem.sentence
+
+.region
+  .container
+    .row.text-center
+      .col-md-12
+        .space-xl
+        h1.space-l Technologie
+
+    .row.text-center
+      .col-md-4
+        .space-l
+        h2 Web
+        .space-xl
+          p Wir entwickeln mit modernen Webstandards wie HTML5, Ember.JS und Ruby on Rails.
+      .col-md-4
+        .space-l
+        h2 iOS
+        .space-xl
+          p Wir entwickeln native und hybride iOS Apps mit Objective-C, Swift oder HTML.
+      .col-md-4
+        .space-l
+        h2 Android
+        .space-xl
+          p Wir entwickeln Android Apps nativ in Java oder in Kombination mit hybriden Elementen.
+
+.region.region-light
+  .container
+    .row
+      .col-md-12
+        .space-xl
+        h1.space-l.text-center Nachricht
+    .row
+      .col-md-6.col-md-offset-3
+        p.space-l Kontaktieren blabla
+        form.space-xl role="form"
+          .form-group
+            label E-Mail
+            input type="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
+          .form-group
+            label Nachricht
+            textarea class="form-control" id="exampleInput2" rows=7
+
+          button.btn.btn-primary.btn-lg type="submit" Nachricht senden
+
+.region.region-light
+  .container
+    .row.text-center
+      .col-md-12
+        .space-xl
+        h1.space-l Kontakt
+    .row.text-center
+      .col-sm-4
+        .space-l
+        i.icon.icon-medium.ion-ios7-location-outline.font-red
+        .space-l
+        p.space-xl
+          | Fischgässel 4
+          br
+          | 93047 Regensburg
+
+      .col-sm-4
+        .space-l
+        i.icon.icon-medium.ion-ios7-email-outline.font-red
+        .space-l
+        p.space-xl
+          = link_to "info@num42.de", "#"
+
+
+      .col-sm-4
+        .space-l
+        i.icon.icon-medium.ion-ios7-telephone-outline.font-red
+        .space-l
+        p.space-xl
+          | +49 (0)941 / 123 123
 
