@@ -43,11 +43,11 @@ end
 activate :autoprefixer
 
 activate :deploy do |deploy|
-  deploy.method = :ftp
-  deploy.host = "ftp.ddengler.eu"
-  deploy.user = "401764-home"
-  deploy.password = "PASS"
-  deploy.path = "/"
+  deploy.build_before = true
+  deploy.method = :sftp
+  deploy.host = "mediazentrum.net"
+  deploy.user = "ssh-264259-num42_web"
+  deploy.path = "web"
 end
 
 # Methods defined in the helpers block are available in templates

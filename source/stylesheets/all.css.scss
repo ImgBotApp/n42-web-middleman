@@ -96,3 +96,21 @@ h2 {
 #map_canvas {
   height: 500px;
 }
+
+#thank_you_message {
+  display: none;
+}
+
+#error_message {
+  display: none;
+}
+
+.hint {
+  color: red;
+}
+
+.valid {
+  display: none;
+}
+
+textarea { resize:vertical; }

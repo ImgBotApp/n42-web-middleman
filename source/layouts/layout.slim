@@ -13,9 +13,11 @@ html lang="en"
       = javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
 
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
     
     javascript:
-      function initialize() {
+
+      function init_google_maps() {
         var hqLatlng = new google.maps.LatLng(49.0206918,12.0952417);
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
@@ -30,9 +32,70 @@ html lang="en"
           title:"Number 42, Fischgässel 4, 93047 Regensburg",
           icon: "images/42.svg"
         });
-
       }
+
+      function init_contact_form() {
+        $("#contact_button").click(function(){
+          $("#error_message").hide();
+          
+          formArray = $("#contact_form").serializeArray();
+          form_valid = true;
+          
+          $.each(formArray, function(i, v) {
+            if(v.name === "email") {
+              if (v.value != ""){
+                $(".contact-email").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-email").removeClass("valid")
+              }
+            }
+
+            if(v.name === "message") {
+              if (v.value != ""){
+                $(".contact-message").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-message").removeClass("valid")
+              }
+            }
+
+            if(v.name === "realname") {
+              if (v.value != ""){
+                $(".contact-name").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-name").removeClass("valid")
+              }
+            } 
+          });
+
+          if(form_valid) {
+            $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
+              $("#thank_you_message").show();
+              $("#contact_form").hide();
+              $("#contact_button").hide();
+            }).fail(
+              function() {
+                $("#error_message").show();
+              }
+            );
+          };
+        
+        });
+
+        
+      }
+
+      function initialize() {
+        init_google_maps();
+        init_contact_form();       
+      }
+
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
+      
 
 
   body class=page_classes
@@ -43,9 +106,9 @@ html lang="en"
         .row
           .col-sm-12
             p.text-center
-              = link_to "Imprint", "#"
+              = link_to "Imprint", "imprint.html"
               |&nbsp;|&nbsp;
-              = link_to "Privacy", "#"
+              = link_to "Privacy", "privacy.html"
 
     = javascript_include_tag "all"
 
