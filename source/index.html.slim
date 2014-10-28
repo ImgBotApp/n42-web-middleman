@@ -176,16 +176,18 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           = link_to "info@num42.de", "#"
           | . Wir freuen uns von Ihnen zu hören!
 
-        form.space-xl role="form"
+        form.space-xl role="form" action="/system-cgi/formmail.pl" method="POST" accept-charset="ISO-8859-1"
+          input type="hidden" name="recipient" value="info@num42.de" 
+          input type="hidden" name="subject" value="Nachricht via Num42 Kontaktformular" 
           .form-group
             label Name
-            input type="text" class="form-control" id="exampleInput0" placeholder="Douglas Adams"
+            input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Douglas Adams"
           .form-group
             label E-Mail
-            input type="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
+            input type="email" name="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
           .form-group
             label Nachricht
-            textarea class="form-control" id="exampleInput2" rows=7
+            textarea name="message" class="form-control" id="exampleInput2" rows=7
 
           button.btn.btn-primary.btn-lg type="submit" Nachricht senden
 
