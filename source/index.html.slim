@@ -17,15 +17,15 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     #main-nav.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a href="#" Leistungen
+          a href="#leistungen" Leistungen
         li
-          a href="#" Team
+          a href="#team" Team
         li
-          a href="#" Prozess
+          a href="#prozess" Prozess
         li
-          a href="#" Kontakt
+          a href="#kontakt" Kontakt
 
-.region
+.region id="leistungen"
   = image_tag "http://placekitten.com/g/1000/440"
 .region.region-light
   .container
@@ -37,8 +37,10 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .col-sm-6.col-md-4.col-md-offset-2
         .space-l
         i.icon.icon-large.ion-ios7-keypad-outline.font-red.space-l
-        h2 App Entwicklung
-        p.space-xl= lorem.sentence
+        h2  App Entwicklung
+        p.space-xl
+          | ￼Wir übernehmen ihr Mobile App Development für iOS und Android Tablets und Phones.
+          | Ob offline lauffähig oder servergestützt, wir realisieren Ihr Projekt, medienübergreifend.
 
       .col-sm-6.col-md-4.col-md-offset-1
         .space-l
@@ -52,12 +54,12 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
 
 
-.region
+.region id="team"
   .container
     .row
       .col-md-12
         .space-xl
-        h1.space-l.text-center Team
+        h1.space-l.text-center  Team 
 
     .row
       .col-sm-6.col-md-3
@@ -74,7 +76,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         h2 David Kraus
         p Entwickler
         p.space-xl
-          = link_to "wlut@num42.de", "#"
+          = link_to "dkra@num42.de", "#"
 
       .col-sm-6.col-md-3
         .space-l
@@ -82,8 +84,8 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         h2 Wolfgang Lutz
         p Entwickler
         p.space-xl
-          = link_to "dkra@num42.de", "#"
-
+          = link_to "wlut@num42.de", "#"
+          
       .col-sm-6.col-md-3
         .space-l
         = image_tag "http://placekitten.com/g/400/300"
@@ -95,38 +97,46 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .row
       .col-md-12
         .space-xl
-          p
-            | Wir arbeiten von unserem Studio in Regensburg, wie von jedem anderen Ort. 
-            | Die frei Arbeitsplatzwahl wird bei uns groß geschrieben und wir verbringen ... TODO!!!!! 
-            = link_to "jobs@num42.de", "#"
+          p.space-xl
+            p Flexibilität ist für uns von hohem Wert. Daher arbeiten wir immer dort, wo es gerade am Besten passt: zu Hause, in unserem Studio in Regensburg, bei unseren Kunden oder im Ausland. Trotzdem sind wir immer eng vernetzt und auf dem aktuellen Stand.
+            p
+              | Interesse bei uns mitzumachen? Einfach bei 
+              = link_to "jobs@num42.de", "#"
+              |  melden.
 
-.region.region-light
+.region.region-light id="prozess"
   .container
     .row.text-center
       .col-md-12
         .space-xl
-        h1.space-l Prozess
+        h1.space-l  Prozess
     .row.text-center
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-compose-outline.font-red.space-l
         h2 Beratung
-        p.space-xl= lorem.sentence
+        p.space-xl
+          | Profitieren Sie schon vor Entwicklungsbeginn von jahrelanger Erfahrung im App und Web-Bereich. Wir entwickeln Ihre Ideen zusammen mit Ihnen zu einem Projekt, das Hand und Fuß hat.
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-gear-outline.font-red.space-l
         h2 Entwicklung
-        p.space-xl= lorem.sentence
+        p.space-xl
+          | Wir legen Wert auf eine enge Zusammenarbeit und schnelle Kommunikation und Abstimmung. Immer wieder. Damit aus Ihrem Projekt das wird, was sie sich vorgestellt haben.
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-analytics-outline.font-red.space-l
         h2 Test
-        p.space-xl= lorem.sentence
+        p.space-xl
+          | Vertrauen ist gut, Testen ist besser. Wir sorgen zusammen mit Ihnen dafür, dass Ihr Projekt zu Ihrer Zufriedenheit das tut, was sie wünschen.
+          | Ohne nervige Fehler.
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-speedometer-outline.font-red.space-l
         h2 Betreuung
-        p.space-xl= lorem.sentence
+        p.space-xl
+          | Wir lassen Sie nicht alleine.
+          | Auch nach der Entwicklung stehen wir Ihnen mit Rat und Tat zur Seite.
 
 .region
   .container
@@ -152,7 +162,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         .space-xl
           p Wir entwickeln Android Apps nativ in Java oder in Kombination mit hybriden Elementen.
 
-.region.region-light
+.region.region-light id="kontakt"
   .container
     .row
       .col-md-12
@@ -160,7 +170,11 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         h1.space-l.text-center Nachricht
     .row
       .col-md-6.col-md-offset-3
-        p.space-l Kontaktieren blabla
+        p.space-l
+          | Interesse? Fragen? Schicken Sie uns hier eine Nachricht oder schreiben Sie uns direkt an 
+          = link_to "info@num42.de", "#"
+          | . Wir freuen uns von Ihnen zu hören!
+
         form.space-xl role="form"
           .form-group
             label Name
@@ -179,7 +193,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .row.text-center
       .col-md-12
         .space-xl
-        h1.space-l Kontakt
+        h1.space-l  Kontakt
     .row.text-center
       .col-sm-4
         .space-l
