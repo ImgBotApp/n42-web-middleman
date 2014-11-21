@@ -45,7 +45,7 @@ activate :autoprefixer
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :sftp
-  deploy.host = "mediazentrum.net"
+  deploy.host = "number42.de"
   deploy.user = "ssh-264259-num42_web"
   deploy.path = "web"
 end

@@ -12,7 +12,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="#"
+      a.navbar-brand href="index.html"
         = image_tag "logo.svg", alt: "Number42"
 
     #main-nav.collapse.navbar-collapse
@@ -34,29 +34,27 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         scrollTop: $('#kontakt').offset().top - 50
     }, 500);" Kontakt
 
-.region id="leistungen"
-  = image_tag "http://placekitten.com/g/1000/440"
+.region#header
+  h1 Die Antwort für
 .region.region-light
-  .container
-    .row.text-center
-      .col-md-12
-        .space-xl
-        h1.space-l Die Antwort für
-    .row.text-center
+  .container#leistungen
+    .row
       .col-sm-6.col-md-4.col-md-offset-2
         .space-l
-        i.icon.icon-large.ion-ios7-keypad-outline.font-red.space-l
-        h2  App Entwicklung
+        .text-center
+          i.icon.icon-large.ion-ios7-keypad-outline.font-red.space-l
+          h2 App Entwicklung
         p.space-xl
-          | ￼Wir übernehmen ihr Mobile App Development für iOS und Android Tablets und Phones.
-          | Ob offline lauffähig oder servergestützt, wir realisieren Ihr Projekt, medienübergreifend.
+          | ￼Wir entwickeln mobilen Apps für iOS und Android.
+          |  Ob offline lauffähig oder servergestützt, wir realisieren Ihr Projekt, medienübergreifend.
 
       .col-sm-6.col-md-4.col-md-offset-1
         .space-l
-        i.icon.icon-large.ion-ios7-monitor-outline.font-red.space-l
-        h2 Web Entwicklung
+        .text-center
+          i.icon.icon-large.ion-ios7-monitor-outline.font-red.space-l
+          h2 Web Entwicklung
         p.space-xl
-          | Wir entwickeln aufwändige und komplexe Web-Anwendungen oder Backendsysteme
+          | Wir entwickeln benutzbare Web-Anwendungen oder Backendsysteme
           |  für mobile Apps. Einfachkeit, Wartbarkeit und Skalierbarkeit sind unsere
           |  Ansprüche.
 
@@ -66,52 +64,46 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 .region id="team"
   .container
     .row
-      .col-md-12
+      .col-md-12.text-center
         .space-xl
-        h1.space-l.text-center  Team 
+        h1.space-l  Team 
 
-    .row
-      .col-sm-6.col-md-3
+    .row.text-center
+      .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "http://placekitten.com/g/400/300"
+        = image_tag "avatar_dden.png"
         h2 Daniel Dengler
-        p Gründer
-        p.space-xl
-          = mail_to "dden@num42.de"
+        p.space-l
+          = mail_to "dden@num42.de", "<i class='icon icon-medium ion-ios7-email-outline font-red'></i>"
 
-      .col-sm-6.col-md-3
+
+      .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "http://placekitten.com/g/400/300"
+        = image_tag "avatar_dkra.png"
         h2 David Kraus
-        p Entwickler
-        p.space-xl
-          = mail_to "dkra@num42.de"
+        p.space-l
+          = mail_to "dkra@num42.de", "<i class='icon icon-medium ion-ios7-email-outline font-red'></i>"
 
-      .col-sm-6.col-md-3
+      .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "http://placekitten.com/g/400/300"
+        = image_tag "avatar_wlut.png"
         h2 Wolfgang Lutz
-        p Entwickler
-        p.space-xl
-          = mail_to "wlut@num42.de"
+        p.space-l
+          = mail_to "wlut@num42.de", "<i class='icon icon-medium ion-ios7-email-outline font-red'></i>"
           
-      .col-sm-6.col-md-3
+      .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "http://placekitten.com/g/400/300"
+        = image_tag "avatar_asol.png"
         h2 Andreas Solleder
-        p Entwickler
-        p.space-xl
-          = mail_to "asol@num42.de"
+        p.space-l
+          = mail_to "asol@num42.de", "<i class='icon icon-medium ion-ios7-email-outline font-red'></i>"
 
     .row
       .col-md-12
-        .space-xl
-          p.space-xl
-            p Flexibilität ist für uns von hohem Wert. Daher arbeiten wir immer dort, wo es gerade am Besten passt: zu Hause, in unserem Studio in Regensburg, bei unseren Kunden oder im Ausland. Trotzdem sind wir immer eng vernetzt und auf dem aktuellen Stand.
-            p
-              | Interesse bei uns mitzumachen? Einfach bei 
-              = mail_to "jobs@num42.de"
-              |  melden.
+        p.space-xl 
+          | Interesse bei uns mitzumachen? Einfach per E-Mail an 
+          = mail_to "jobs@num42.de"
+          |  wenden.
 
 .region.region-light id="prozess"
   .container
@@ -119,7 +111,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .col-md-12
         .space-xl
         h1.space-l  Prozess
-    .row.text-center
+    .row
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-compose-outline.font-red.space-l
@@ -142,7 +134,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .col-md-3
         .space-l
         i.icon.icon-large.ion-ios7-speedometer-outline.font-red.space-l
-        h2 Betreuung
+        h2 Betrieb
         p.space-xl
           | Wir lassen Sie nicht alleine.
           | Auch nach der Entwicklung stehen wir Ihnen mit Rat und Tat zur Seite.
@@ -154,7 +146,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         .space-xl
         h1.space-l Technologie
 
-    .row.text-center
+    .row
       .col-md-4
         .space-l
         h2 Web
@@ -193,7 +185,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           |.
 
 
-        form.space-xl id="contact_form" role="form" accept-charset="ISO-8859-1"
+        form id="contact_form" role="form" accept-charset="ISO-8859-1"
           input type="hidden" name="recipient" value="info@num42.de" 
           input type="hidden" name="subject" value="Nachricht via Num42 Kontaktformular" 
           .form-group
@@ -233,6 +225,92 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         p.space-xl
           | +49 (0)941 / 123 123
 
-  .container
-    #map_canvas.space-xl
+.region
+  #map_canvas
 
+
+    javascript:
+
+      function init_google_maps() {
+        var hqLatlng = new google.maps.LatLng(49.0206918,12.0952417);
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: hqLatlng,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          draggable: false,
+          zoomControl: false,
+          scaleControl: false,
+          scrollwheel: false,
+          disableDoubleClickZoom: true,
+          disableDefaultUI: true
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+          position: hqLatlng,
+          map: map,
+          title:"Number 42, Fischgässel 4, 93047 Regensburg",
+          icon: "images/42.svg"
+          
+        });
+      }
+
+      function init_contact_form() {
+        $("#contact_button").click(function(){
+          $("#error_message").hide();
+          
+          formArray = $("#contact_form").serializeArray();
+          form_valid = true;
+          
+          $.each(formArray, function(i, v) {
+            if(v.name === "email") {
+              if (v.value != ""){
+                $(".contact-email").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-email").removeClass("valid")
+              }
+            }
+
+            if(v.name === "message") {
+              if (v.value != ""){
+                $(".contact-message").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-message").removeClass("valid")
+              }
+            }
+
+            if(v.name === "realname") {
+              if (v.value != ""){
+                $(".contact-name").addClass("valid")
+              } else {
+                form_valid = false;
+                $(".contact-name").removeClass("valid")
+              }
+            }
+          });
+
+          if(form_valid) {
+            $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
+              $("#thank_you_message").show();
+              $("#contact_form").hide();
+              $("#contact_button").hide();
+            }).fail(
+              function() {
+                $("#error_message").show();
+              }
+            );
+          };
+        
+        });
+
+        
+      }
+
+      function initialize() {
+        init_google_maps();
+        init_contact_form();       
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
