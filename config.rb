@@ -44,10 +44,11 @@ activate :autoprefixer
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method = :sftp
+  deploy.method = :rsync
   deploy.host = "number42.de"
   deploy.user = "ssh-264259-num42_web"
   deploy.path = "web"
+  deploy.clean = true
 end
 
 # Methods defined in the helpers block are available in templates
@@ -74,10 +75,10 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets
