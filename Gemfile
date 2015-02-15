@@ -1,9 +1,9 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem "middleman", "~>3.3.6"
+gem "middleman"
 gem "middleman-livereload"
 gem "middleman-deploy"
 gem "middleman-autoprefixer"

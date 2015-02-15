@@ -100,16 +100,16 @@ h2 {
   h1 {
     color: #fff;
     font-family: "Roboto-Regular", sans-serif;
-    text-align: center;
+    text-align: left;
     margin-left: 20px;
     font-weight: bold;
     font-size: 3em;
     line-height: 1.3em;
-    text-shadow: rgba(0,0,0,0.7) 0px 1px 2px;
+
     position: absolute;
-    top: 280px;
     left: 0;
     right: 0;
+    display: none;
   }
 }
 
@@ -118,6 +118,9 @@ h2 {
     height: 500px;
     h1 {
       font-size: 4em;
+      display: block;
+      top: 186px;
+      text-shadow: rgba(0,0,0,0.7) 0px 2px 3px;
     }
   }
 }
@@ -125,7 +128,8 @@ h2 {
   #header {
     height: 700px;
     h1 {
-      font-size: 4em;
+      font-size: 6em;
+      top: 240px;
     }
   }
 }
