@@ -71,7 +71,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .row.text-center
       .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "avatar_dden.png"
+        = image_tag "avatar_dden_2.png"
         h2 Daniel Dengler
         p.space-l
           = mail_to "dden@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
@@ -79,21 +79,21 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
 
       .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "avatar_dkra.png"
+        = image_tag "avatar_dkra_2.png"
         h2 David Kraus
         p.space-l
           = mail_to "dkra@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
 
       .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "avatar_wlut.png"
+        = image_tag "avatar_wlut_2.png"
         h2 Wolfgang Lutz
         p.space-l
           = mail_to "wlut@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
           
       .col-xs-6.col-xs-offset-3.col-sm-6.col-sm-offset-0.col-md-3
         .space-l
-        = image_tag "avatar_asol.png"
+        = image_tag "avatar_asol_2.png"
         h2 Andreas Solleder
         p.space-l
           = mail_to "asol@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
@@ -202,7 +202,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           .form-group
             label Name
             .contact-name.hint.valid Muss ausgefüllt werden
-            input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Douglas Adams"
+            input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Hans Mustermann"
           .form-group
             label E-Mail
             .contact-email.hint.valid Muss ausgefüllt werden
@@ -243,7 +243,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     javascript:
 
       function init_google_maps() {
-        var hqLatlng = new google.maps.LatLng(49.0206918,12.0952417);
+        var hqLatlng = new google.maps.LatLng(49.0200999,12.0965185);
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
           center: hqLatlng,
@@ -260,7 +260,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         var marker = new google.maps.Marker({
           position: hqLatlng,
           map: map,
-          title:"Number 42, Fischgässel 4, 93047 Regensburg",
+          title:"Number 42, Watmarkt 5, 93047 Regensburg",
           icon: "images/42.svg"
           
         });
