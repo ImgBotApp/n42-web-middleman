@@ -18,21 +18,21 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     #main-nav.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a href="javascript:$('html, body').animate({
+          a onclick="javascript:$('html, body').animate({
         scrollTop: $('#leistungen').offset().top - 50
-    }, 500);" Leistungen
+    }, 500); $('.collapse').collapse('hide');" Leistungen
         li
-          a href="javascript:$('html, body').animate({
+          a onclick="javascript:$('html, body').animate({
         scrollTop: $('#team').offset().top - 50
-    }, 500);" Team
+    }, 500); $('.collapse').collapse('hide');" Team
         li
-          a href="javascript:$('html, body').animate({
+          a onclick="javascript:$('html, body').animate({
         scrollTop: $('#prozess').offset().top - 50
-    }, 500);" Prozess
+    }, 500); $('.collapse').collapse('hide');" Prozess
         li
-          a href="javascript:$('html, body').animate({
+          a onclick="javascript:$('html, body').animate({
         scrollTop: $('#kontakt').offset().top - 50
-    }, 500);" Kontakt
+    }, 500); $('.collapse').collapse('hide');" Kontakt
 
 .region#header
   h1
