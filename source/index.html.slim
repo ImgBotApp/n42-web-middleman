@@ -43,23 +43,21 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
   .container#leistungen
     .row
       .col-sm-6.col-md-4.col-md-offset-2
-        .space-l
-        .text-center
+        .space-l.text-center
           i.icon.icon-large.ion-ios-keypad-outline.font-red.space-l
           h2 App Entwicklung
-        p.space-xl
-          | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt. 
-          |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um. 
+          p.space-xl
+            | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt. 
+            |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um. 
 
 
       .col-sm-6.col-md-4.col-md-offset-1
-        .space-l
-        .text-center
+        .space-l.text-center
           i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l
           h2 Web Entwicklung
-        p.space-xl
-          | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
-          |  komplexe Backend-Systeme, wir finden für sie genau die Lösung, die sie brauchen.
+          p.space-xl
+            | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
+            |  komplexe Backend-Systeme, wir finden für sie genau die Lösung, die sie brauchen.
 
 .region id="team"
   .container
@@ -110,7 +108,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         p.space-l
           = mail_to "hsch@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
 
-    .row
+    .row.text-center
       .col-md-12
         p.space-l
           | Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, 
@@ -118,12 +116,45 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           |  mit den neuesten Technologien programmieren wie Ingenieure und wenn wir ihrem Produkt ein unverkennbares Design 
           |  verpassen wie Künstler. Wir begleiten sie von der ersten Idee bis zur Veröffentlichung. 
           |  Wir sind nicht nur irgendeine Agentur, wir machen ihr Produkt einzigartig.
-        p.space-xl 
-          | Interesse bei uns mitzumachen? Einfach per E-Mail an 
-          = mail_to "jobs@num42.de"
-          |  wenden.
-
-.region.region-light id="prozess"
+          
+.region.region-light id="jobs"
+  .container
+    .row.text-center
+      .col-md-12
+        .space-xl
+        h1.space-l Jobs  
+        p.space-l
+          i.icon.icon-large.ion-social-android-outline.font-red
+          h2.space-l Werkstudent für Android Entwicklung
+          h3 Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH?
+          p
+            |Wenn du Lust auf mobile Entwicklung hast und dich vor allem
+            br
+            |bei der Arbeit im Team pudelwohl fühlst, dann wollen wir dich unbedingt kennenlernen!
+            / br 
+            / |dann wollen wir dich unbedingt kennenlernen!
+          h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
+          p 
+            | Solltest du dennoch bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein 
+            br
+            |und vielleicht sogar Basis-Knowledge in der Webentwicklung (HTML5, CSS3, Javascript) mitbringen, 
+            br
+            |freuen wir uns.
+          h3 Zu bieten haben wir auch einiges: 
+          p
+            |Du arbeitest bei uns in einem schnell wachsenden, kompetenten 
+            br
+            |und motivierten Team, sowohl an Kundenprojekten als auch an eigenen Produkten.
+            br
+            |Ein Büro in der Regensburger Altstadt mit Kaffee-Flatrate legen wir als Schmankerl oben drauf. 
+          h3 Interesse geweckt? 
+          p.space-xl
+            |Dann schicke uns schnell deine Bewerbungsunterlagen 
+            br
+            |(kurzes Motivationsschreiben und Lebenslauf) an 
+            = mail_to "jobs@num42.de"
+          
+.region id="prozess"
   .container
     .row.text-center
       .col-md-12
@@ -131,43 +162,43 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         h1.space-l  Prozess
     .row
       .col-md-3
-        .space-l
-        i.icon.icon-large.ion-ios-compose-outline.font-red.space-l
-        h2 Beratung
-        p.space-xl
-          | Sie sind Experte in ihrem Bereich, wir in unserem. Darum setzen wir auf eine gemeinsame Ausarbeitung ihrer Idee, 
-          |  so dass sie ein Ergebnis erhalten, das funktioniert.
+        .space-l.text-center
+          i.icon.icon-large.ion-ios-compose-outline.font-red.space-l
+          h2 Beratung
+          p.space-xl
+            | Sie sind Experte in ihrem Bereich, wir in unserem. Darum setzen wir auf eine gemeinsame Ausarbeitung ihrer Idee, 
+            | so dass sie ein Ergebnis erhalten, das funktioniert.
 
       .col-md-3
-        .space-l
-        i.icon.icon-large.ion-ios-gear-outline.font-red.space-l
-        h2 Entwicklung
-        p.space-xl
-          | Ihr Produkt soll innovativ sein, also entwickeln wir auch so. Durch dynamisches Projektmanagement, unkomplizierte 
-          |  Kommunikation und der Nutzung neuester technologischer Standards machen wir für sie und ihr Produkt den Unterschied.
+        .space-l.text-center
+          i.icon.icon-large.ion-ios-gear-outline.font-red.space-l
+          h2 Entwicklung
+          p.space-xl
+            | Ihr Produkt soll innovativ sein, also entwickeln wir auch so. Durch dynamisches Projektmanagement, unkomplizierte 
+            |  Kommunikation und der Nutzung neuester technologischer Standards machen wir für sie und ihr Produkt den Unterschied.
       .col-md-3
-        .space-l
-        i.icon.icon-large.ion-ios-analytics-outline.font-red.space-l
-        h2 Test
-        p.space-xl
-          | Vorsicht ist besser als Nachsicht. Das gilt auch bei uns, denn durch regelmäßiges, professionelles 
-          |  Testing noch während der Entwicklung sehen wir Probleme sofort – und lösen sie.
+        .space-l.text-center
+          i.icon.icon-large.ion-ios-analytics-outline.font-red.space-l
+          h2 Test
+          p.space-xl
+            | Vorsicht ist besser als Nachsicht. Das gilt auch bei uns, denn durch regelmäßiges, professionelles 
+            |  Testing noch während der Entwicklung sehen wir Probleme sofort – und lösen sie.
       .col-md-3
-        .space-l
-        i.icon.icon-large.ion-ios-speedometer-outline.font-red.space-l
-        h2 Betrieb
-        p.space-xl
-          | Mit uns ist ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen, 
-          |  technologische Weiterentwicklungen nötig sind oder ihre Anwendung einfach einen neuen Anstrich braucht.
+        .space-l.text-center
+          i.icon.icon-large.ion-ios-speedometer-outline.font-red.space-l
+          h2 Betrieb
+          p.space-xl
+            | Mit uns ist ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen, 
+            |  technologische Weiterentwicklungen nötig sind oder ihre Anwendung einfach einen neuen Anstrich braucht.
 
-.region
+.region.region-light
   .container
     .row.text-center
       .col-md-12
         .space-xl
         h1.space-l Technologie
 
-    .row
+    .row.text-center
       .col-md-4
         .space-l
         h2 Web
@@ -189,7 +220,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .row
       .col-md-12
         .space-xl
-        h1.space-l Kontakt
+        h1.space-l.text-center Kontakt
     .row
       .col-md-7
         h2 Was können wir für sie tun?
