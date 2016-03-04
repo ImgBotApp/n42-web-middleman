@@ -2,12 +2,12 @@
 # the following line to use "https"
 source 'https://rubygems.org'
 
-gem "middleman"
-gem "middleman-livereload"
+gem "middleman", "~>3.3.6"
+gem "middleman-livereload", "~> 3.1.0"
 gem "middleman-deploy"
-gem "middleman-autoprefixer"
+gem "middleman-slim"
 
-gem "slim"
+gem "haml"
 gem "sass"
 
 # assets and rails-assets.org
