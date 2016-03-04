@@ -261,9 +261,9 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         i.icon.icon-medium.ion-ios-location-outline.font-red
         .space
         p.space-xl
-          | Watmarkt 5
+          | Franz-Mayer-Straße 1
           br
-          | 93047 Regensburg
+          | 93053 Regensburg
 
 
         .space-l
@@ -286,7 +286,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     javascript:
 
       function init_google_maps() {
-        var hqLatlng = new google.maps.LatLng(49.0200999,12.0965185);
+        var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
           center: hqLatlng,
@@ -303,7 +303,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         var marker = new google.maps.Marker({
           position: hqLatlng,
           map: map,
-          title:"Number 42, Watmarkt 5, 93047 Regensburg",
+          title:"Number 42, Franz-Mayer-Straße 1, 93053 Regensburg",
           icon: "images/42.svg"
           
         });
