@@ -171,3 +171,10 @@ textarea { resize:vertical; }
 .navbar li{
   cursor: pointer;
 }
+
+.float-left {
+  float: left;
+  &.icon{
+    margin-right: 0.3em;
+  }
+}
