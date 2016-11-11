@@ -1,0 +1,74 @@
+---
+title: Number 42 Jobs
+---
+
+
+nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
+  .container-fluid
+    /! Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle.collapsed data-target="#main-nav" data-toggle="collapse" type="button"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="index.html"
+        = image_tag "logo.svg", alt: "Number42"
+
+.region.region-light#imprint
+  .container
+    .row.space-header.text-center.no-print
+      .col-lg-12
+        h1.space-l Jobs
+  .container.page
+    .row
+      .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+        = partial "jobs_print_header"
+        .row
+          /.col-lg-12.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1 
+          .space-l.text-center
+            i.icon.icon-large.ion-social-android-outline.font-red.space-l.no-print
+            h2 Werkstudent(in) Android
+            i.icon.icon-large.ion-social-android-outline.font-red.space-l.print
+        .row
+          /.col-lg-12.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1 
+          .text-center  
+            p
+              |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
+              |Du hast bereits erste Erfahrungen in mobile Entwicklung und fühlst dich bei der Arbeit im Team pudelwohl? 
+              |Dann wollen wir dich unbedingt kennenlernen!
+            
+            h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
+            p
+              |Grundlegene Programmierkenntnisse in Java setzen wir vorraus. Solltest sogar bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein freuen wir uns.
+
+             
+        = partial "jobs_footer"
+      .page-break
+                  
+      .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+        = partial "jobs_print_header"
+        .row
+          / .col-lg-12.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1 
+          .space-l.text-center
+            i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l.no-print
+            h2 Werkstudent(in) Webentwicklung
+            i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l.print
+            
+            
+            
+        .row
+          .text-center
+            / .col-lg-12.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1 
+            p 
+              |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
+              |Du hast bereits erste Erfahrungen in der Webentwicklung (HTML5, CSS3, Javascript) gesammelt und bist teamfähig?
+              |Dann wollen wir dich unbedingt kennenlernen!
+            
+            h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
+            p 
+              |Solltest du dennoch bereits Basis-Knowledge mit 
+              |Javascript-Frameworks wie React, Angular oder Ember 
+              |oder der Programmiersprache Ruby mitbringen, 
+              |freuen wir uns.
+        = partial "jobs_footer"

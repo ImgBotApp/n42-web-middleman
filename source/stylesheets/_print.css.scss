@@ -1,0 +1,76 @@
+.print {
+  display: none;
+}
+
+@media print{
+  .col-md-offset-3, .col-lg-offset-2{
+    margin-left: 0 !important;
+  }
+
+  .col-md-6, .col-lg-5 {
+    width: 100% !important;
+  }
+  .no-print, .no-print *{
+    display: none !important;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  body {
+    a {
+      color: $red-color !important;
+    }
+    a[href]:after {
+    content: none !important;
+    }
+    .icon:before { color:$red-color !important; }
+    h2 {
+      font-size: 46px;
+      font-family: "Roboto-Regular", sans-serif;
+      margin-bottom: 10px;
+      margin-top: 80px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 28px;
+      font-family: "Roboto-Regular", sans-serif;
+      margin-bottom: 30px;
+      margin-top: 0;
+      text-align: left;
+    }
+    p {
+      font-size: 20px;
+      font-family: "Roboto-Light", sans-serif;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+  }
+  .title-image {
+    width: 40vw;
+    display:block;
+    margin-left:auto;
+    margin-top: 80px;
+    margin-right:auto;
+  }
+  .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      margin: 1cm auto;
+      border-radius: 5px;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .container.page.row.h2.title {
+    font-size: 96pt;
+    margin-bottom: 2em;
+  }
+  .print {
+    display: block;
+  }
+}
+
+
+@page {
+    size: A4;
+    margin: 0;
+}
