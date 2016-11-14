@@ -13,8 +13,9 @@
   .no-print, .no-print *{
     display: none !important;
   }
-  .page-break {
+  .page {
     page-break-after: always;
+    page-break-inside: avoid;
   }
   body {
     a {
@@ -24,38 +25,43 @@
     content: none !important;
     }
     .icon:before { color:$red-color !important; }
+    .icon {
+      margin-bottom: 20px;
+    }
     h2 {
-      font-size: 46px;
+      font-size: 36pt;
       font-family: "Roboto-Regular", sans-serif;
-      margin-bottom: 10px;
-      margin-top: 80px;
+      margin-bottom: 15px;
+      margin-top: 70px;
       text-align: center;
     }
     h3 {
-      font-size: 28px;
+      font-size: 20pt;
       font-family: "Roboto-Regular", sans-serif;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       margin-top: 0;
       text-align: left;
     }
-    p {
-      font-size: 20px;
-      font-family: "Roboto-Light", sans-serif;
-      margin-bottom: 50px;
-      text-align: left;
+    .row {
+      p {
+        font-size: 16pt;
+        font-family: "Roboto-Light", sans-serif;
+        margin-bottom: 45px;
+        text-align: left;
+      }
+      ul li { font-size: 16pt; }
     }
   }
   .title-image {
     width: 40vw;
-    display:block;
+    display: absolute;
     margin-left:auto;
-    margin-top: 80px;
+    margin-top: -80px;
     margin-right:auto;
   }
   .page {
       width: 21cm;
       min-height: 29.7cm;
-      margin: 1cm auto;
       border-radius: 5px;
       background: white;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -72,5 +78,5 @@
 
 @page {
     size: A4;
-    margin: 0;
+    margin: 80px 90px 80px 90px;
 }
