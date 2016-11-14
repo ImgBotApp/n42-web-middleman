@@ -137,10 +137,6 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           h2 Werkstudent Android
           p.space-xl
             | Du bist Student, hast bereits erste Erfahrungen in mobile Entwicklung und möchtest praktische Erfahrung als Werkstudent sammeln?
-            |&nbsp;
-            = link_to "Hier", "jobs.html"
-            |&nbsp;
-            |findest du unsere aktuellen Stellenausschreibungen. 
       .col-sm-6.col-md-4.col-md-offset-2
         .space-l
         .space-l.text-center
@@ -148,49 +144,11 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           h2 Werkstudent Webentwicklung
           p.space-xl
             | Du studierst Informatik an der FH oder Uni, hast dich schonmal an Webentwicklung versucht und suchst eine Werkstudentenstelle?
-            |&nbsp;
-            = link_to "Hier", "jobs.html"
-            |&nbsp;
-            |findest du unsere aktuellen Stellenausschreibungen.
-
-
-/.region.region-light id="jobs"
-  .container
-    .row.text-center
+        
+    row
       .col-md-12
-        .space-xl
-        h1.space-l Jobs
-        p.space-l
-          i.icon.icon-large.ion-social-android-outline.font-red
-          h2.space-l Werkstudent für Android Entwicklung
-          h3 Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH?
-          p
-            |Wenn du Lust auf mobile Entwicklung hast und dich vor allem
-            br
-            |bei der Arbeit im Team pudelwohl fühlst, dann wollen wir dich unbedingt kennenlernen!
-            / br
-            / |dann wollen wir dich unbedingt kennenlernen!
-          h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
-          p
-            | Solltest du dennoch bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein
-            br
-            |und vielleicht sogar Basis-Knowledge in der Webentwicklung (HTML5, CSS3, Javascript) mitbringen,
-            br
-            |freuen wir uns.
-          h3 Zu bieten haben wir auch einiges:
-          p
-            |Du arbeitest bei uns in einem schnell wachsenden, kompetenten
-            br
-            |und motivierten Team, sowohl an Kundenprojekten als auch an eigenen Produkten.
-            br
-            |Ein Büro in der Regensburger Altstadt mit Kaffee-Flatrate legen wir als Schmankerl oben drauf.
-          h3 Interesse geweckt?
-          p.space-xl
-            |Dann schicke uns schnell deine Bewerbungsunterlagen
-            br
-            |(kurzes Motivationsschreiben und Lebenslauf) an
-            = mail_to "jobs@num42.de"
-
+        p.text-center.space-xl
+          = link_to "Stellenausschreibungen", "jobs.html", class: "btn btn-primary btn-lg"
 .region id="prozess"
   .container
     .row.text-center
@@ -228,7 +186,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
             | Mit uns ist Ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen,
             |  technologische Weiterentwicklungen nötig sind oder Ihre Anwendung einfach einen neuen Anstrich braucht.
 
-.region.region-light
+.region
   .container
     .row.text-center
       .col-md-12
