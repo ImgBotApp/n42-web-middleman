@@ -19,16 +19,21 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
   .container
     .row.space-header.text-center.no-print
       .col-lg-12
-        h1.space-l Jobs
-  .container.page
+        h1.space-l Stellenausschreibungen
+  .container
     .row
-      .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+      .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2.page.page-break
         = partial "jobs_print_header"
         .space-l
           .text-center
-            i.icon.icon-large.ion-social-android-outline.font-red.space-l.no-print
-          h2.text-center.space-l Werkstudent(in) Android
-          i.icon.icon-large.ion-social-android-outline.font-red.space-l.print
+            i.icon.icon-large.ion-social-android-outline.font-red.no-print
+          h2.text-center.space-l 
+            |Werkstudentin/Werkstudent 
+            br
+            |Android
+            
+          .text-center
+            i.icon.icon-large.ion-social-android-outline.font-red.print
       
           p
             |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
@@ -37,28 +42,28 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
           
           h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
           p
-            |Grundlegene Programmierkenntnisse in Java setzen wir vorraus. Solltest sogar bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein freuen wir uns.
+            |Grundlegende Programmierkenntnisse in Java setzen wir voraus. Solltest du sogar bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein freuen wir uns.
             
           h3 Deine Aufgaben
           ul
             li Erlernen unseres Technologie Stacks
-            li Entwicklung von nativen Android-Apps in Java
-            li Konzipieren von Apps
+            li Entwicklung nativer Android-Apps in Java
+            li Konzeption von Apps
              
         = partial "jobs_footer"
-      .page-break
-                  
-      .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+                        
+      .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2.page.page-break
         = partial "jobs_print_header"
         .space-l
           .text-center
             i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l.no-print
-          h2.text-center.space-l Werkstudent(in) Webentwicklung
-          i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l.print
+          h2.text-center.space-l Werkstudentin/Werkstudent Webentwicklung
+          .text-center
+            i.icon.icon-large.ion-ios-monitor-outline.font-red.print
             
           p 
             |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
-            |Du hast bereits erste Erfahrungen in der Webentwicklung (HTML5, CSS3, Javascript, PHP oder Node.js) gesammelt und bist teamfähig?
+            |Du hast bereits erste Erfahrungen in der Webentwicklung (HTML5, CSS3, JavaScript, PHP oder Node.js) gesammelt und bist teamfähig? 
             |Dann wollen wir dich unbedingt kennenlernen!
           
           h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
@@ -73,6 +78,6 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
             li Erlernen unseres Technologie Stacks
             li Entwicklung von Backends in Ruby on Rails
             li Entwicklung von Frontends in Javascript
-            li Konzipieren von Web-UIs
+            li Konzeption von Web-UIs
 
         = partial "jobs_footer"
