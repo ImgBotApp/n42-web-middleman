@@ -44,8 +44,15 @@
         font-family: "Roboto-Light", sans-serif;
         margin-bottom: 45px;
         text-align: left;
+        b {
+          font-weight: normal;
+          font-family: "Roboto-Regular", sans-serif;
+        }
       }
       ul li { font-size: 16pt; }
+      p.small-print-margin{
+        margin-bottom: 10px;
+      }
     }
   }
   .title-image {

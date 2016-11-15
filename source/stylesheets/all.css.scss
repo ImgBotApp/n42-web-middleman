@@ -44,6 +44,11 @@ h3 {
     font-size: 1.1em;
     line-height: 1.6em;
     color: #6c6c6c;
+    b {
+      font-family: "Roboto-Regular", sans-serif;
+      color: #333333;
+      font-weight: normal;
+    }
   }
 }
 
@@ -180,6 +185,8 @@ textarea { resize:vertical; }
   text-align: center;
 }
 
-.print {
-  display: none;
+@media screen {
+  .print {
+    display: none;
+  }
 }
