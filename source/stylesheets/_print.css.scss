@@ -28,13 +28,13 @@
       font-size: 36pt;
       font-family: "Roboto-Regular", sans-serif;
       margin-bottom: 15px;
-      margin-top: 70px;
+      margin-top: 50px;
       text-align: center;
     }
     h3 {
       font-size: 20pt;
       font-family: "Roboto-Regular", sans-serif;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       margin-top: 0;
       text-align: left;
     }
@@ -42,7 +42,7 @@
       p {
         font-size: 16pt;
         font-family: "Roboto-Light", sans-serif;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
         text-align: left;
         b {
           font-weight: normal;
@@ -53,6 +53,13 @@
       p.small-print-margin{
         margin-bottom: 10px;
       }
+      p.small.print {
+        position: absolute;
+        bottom: -130px;
+        width: 100%;
+        text-align: center !important;
+      }
+
     }
   }
   .title-image {
