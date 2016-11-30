@@ -1,11 +1,14 @@
 doctype html
-html lang="en"
+html lang="en" prefix="og: http://ogp.me/ns#"
   head
     meta charset="utf-8"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1" name="viewport"
     link rel="shortcut icon" href="#{image_path('favicon.png')}"
     title= current_page.data.title || "42"
+    meta property="og:image" content= current_page.data.preview_image
+    meta property="og:description" content= current_page.data.preview_description 
+    
     = stylesheet_link_tag "all"
     /! HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     /! WARNING: Respond.js doesn't work if you view the page via file://
