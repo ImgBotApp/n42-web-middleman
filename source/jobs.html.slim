@@ -19,7 +19,7 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
   .container
     .row.space-header.text-center.no-print
       .col-lg-12
-        h1.space-l Stellenausschreibungen
+        h1.space-l Jobs
       
       .col-lg-4.col-lg-offset-4
         .no-print
@@ -30,15 +30,15 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
       
   .container
     .row
-      .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2.page.page-break
+      .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-xs-10.col-xs-offset-1.page.page-break
         = partial "jobs_print_header"
         .space-l
           .text-center
             i.icon.icon-large.ion-social-android-outline.font-red.no-print
           h2.text-center.space-l 
-            |Werkstudentin/Werkstudent 
-            br
-            |Android
+            span.smallWordingSpace Werkstudentin / Werkstudent
+            br.hidden-sm-down
+            span &nbsp;Android
             
           .text-center
             i.icon.icon-large.ion-social-android-outline.font-red.print
@@ -60,12 +60,15 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
              
         = partial "jobs_footer"
                         
-      .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2.page.page-break
+      .col-lg-5.col-lg-offset-2.col-md-6.col-md-offset-3.col-xs-10.col-xs-offset-1.page.page-break
         = partial "jobs_print_header"
         .space-l
           .text-center
             i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l.no-print
-          h2.text-center.space-l Werkstudentin/Werkstudent Webentwicklung
+            h2.text-center.space-l 
+              span.smallWordingSpace Werkstudentin / Werkstudent
+              br
+              span &nbsp;Webentwicklung
           .text-center
             i.icon.icon-large.ion-ios-monitor-outline.font-red.print
             
