@@ -286,9 +286,11 @@ textarea { resize:vertical; }
 }
 
 @media only screen and (min-width : 320px) {
-  .hidden-sm-down {display: none;}
+  .hidden-sm-down {display: grid;}
+  .hidden-sm-up {display: none;}
 }
 
-@media only screen and (min-width : 768px) {
-  .hidden-sm-down {display: block;}
+@media only screen and (min-width : 480px) {
+  .hidden-sm-down {display: none;}
+  .hidden-sm-up {display: block;}
 }
