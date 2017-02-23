@@ -2,7 +2,7 @@
 title: Number 42 Jobs
 preview_image: WirSuchenDichHexa.png
 preview_description: Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? Du hast bereits erste Erfahrungen in mobile Entwicklung und fühlst dich bei der Arbeit im Team pudelwohl? Dann wollen wir dich unbedingt kennenlernen!
---- 
+---
 
 
 nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
@@ -18,79 +18,19 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
       .col-lg-12
         h1
           span.smallWordingSpace Stellenaus
-          span.hidden-sm-down 
+          span.hidden-sm-down
             |-
             br
-          
+
           span schreibungen
-        
+
       .col-lg-4.col-lg-offset-4.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1.space-xl
         .no-print
           .row
             .header-image
               = image_tag "WirSuchenDich.svg", alt: "Wir suchen Dich!"
-      
-      
-  .container
-    .row
-      / .col-lg-5.col-lg-offset-0.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.page.page-break
-      /   = partial "jobs_print_header"
-      /   .space-l
-      /     .text-center
-      /       i.icon.icon-large.ion-social-android-outline.font-red.no-print
-      /     h2.text-center.space-l 
-      /       span.smallWordingSpace Werkstudentin / Werkstudent
-      /       br.hidden-sm-up
-      /       span &nbsp;Android
-      /       
-      /     .text-center
-      /       i.icon.icon-large.ion-social-android-outline.font-red.print
-      / 
-      /     p
-      /       |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
-      /       |Du hast bereits erste Erfahrungen in mobile Entwicklung und fühlst dich bei der Arbeit im Team pudelwohl? 
-      /       |Dann wollen wir dich unbedingt kennenlernen!
-      /     
-      /     h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
-      /     p
-      /       |Grundlegende Programmierkenntnisse in Java setzen wir voraus. Solltest du sogar bereits mit Android Libraries wie Retrofit oder Dagger vertraut sein, freuen wir uns.
-      /       
-      /     h3 Deine Aufgaben
-      /     ul
-      /       li Erlernen unseres Technologie Stacks
-      /       li Entwicklung nativer Android-Apps in Java
-      /       li Konzeption von Apps
-             
-        = partial "jobs_footer"
-                        
-      .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.page.page-break
-        = partial "jobs_print_header"
-        .space-l
-          .text-center
-            h2.text-center.space-l 
-              span.smallWordingSpace Werkstudentin / Werkstudent
-              br
-              span &nbsp;Webentwicklung
-          .text-center
-            i.icon.icon-large.ion-ios-monitor-outline.font-red
-            
-          p 
-            |Du studierst Informatik oder einen vergleichbaren Studiengang an der Uni oder FH? 
-            |Du hast bereits erste Erfahrungen in der Webentwicklung (HTML5, CSS3, JavaScript, PHP oder Node.js) gesammelt und bist teamfähig? 
-            |Dann wollen wir dich unbedingt kennenlernen!
-          
-          h3 Du bringst keine 25 Jahre Berufserfahrung mit? Wissen wir.
-          p 
-            |Solltest du dennoch bereits mit 
-            |JavaScript-Frameworks (React, Angular, Ember etc.) 
-            |oder der Programmiersprache Ruby gearbeitet haben, 
-            |freuen wir uns.
-            
-          h3 Deine Aufgaben
-          ul
-            li Erlernen unseres Technologie Stacks
-            li Entwicklung von Backends in Ruby on Rails
-            li Entwicklung von Frontends in JavaScript
-            li Konzeption von Web-UIs
 
+
+  .container
+        = partial "jobs_empty"
         = partial "jobs_footer"
