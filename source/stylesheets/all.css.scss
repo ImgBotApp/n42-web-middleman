@@ -307,7 +307,8 @@ textarea { resize:vertical; }
 
 .coin, .coin .front, .coin .back{
   height: 256px;
-  width: 256px;
+  max-width: 256px;
+  width: 100%;
   border-radius: 100%;
 }
 
