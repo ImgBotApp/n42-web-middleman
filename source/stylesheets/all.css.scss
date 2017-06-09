@@ -14,6 +14,23 @@ $region-light-color: #fff;
 $region-dark-color: #ececec;
 $default-space: 30px;
 
+
+// the heart is important
+i.ion-heart {
+  color: #D24335;
+  animation:(pulsate 1.9s linear);
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes pulsate {
+  0% {opacity: 0.6;}
+  45% {opacity: 0.8;}
+  55% {opacity: 1;}
+  65% {opacity: 0.8;}
+  70% {opacity: 1;}
+  100% {opacity: 0.6;}
+}
+
 body {
   font-family: "Roboto-Light", sans-serif;
 }
@@ -89,6 +106,14 @@ h3 {
 }
 
 
+
+.mlg{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+
 .footer {
   font-size: 0.8em;
   color: $gray-light;
@@ -100,7 +125,7 @@ h3 {
 // Header
 
 #header {
-  background: url(image-path('header.jpg')) center;
+  background: url(image-path('header.png')) center;
   background-size: cover;
   height: 300px;
   border-bottom: 4px solid $red-color;
@@ -138,8 +163,21 @@ h3 {
   #header {
     height: 700px;
     h1 {
-      font-size: 6em;
+      font-size: 4em;
+      display: block;
       top: 240px;
+      text-shadow: rgba(0,0,0,0.7) 0px 2px 3px;
+    }
+  }
+}
+@media(max-width: $screen-md-min) {
+  #header {
+    height: 300px;
+    h1 {
+      font-size: 2.7em;
+      display: block;
+      top: 120px;
+      text-shadow: rgba(0,0,0,0.7) 0px 2px 3px;
     }
   }
 }

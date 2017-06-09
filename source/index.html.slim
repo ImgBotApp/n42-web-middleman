@@ -1,5 +1,5 @@
 ---
-title: Number 42
+title: Number42
 preview_image: logo_512.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 ---
@@ -52,7 +52,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         .space-l
         .space-l.text-center
           i.icon.icon-large.ion-ios-keypad-outline.font-red.space-l
-          h2 App Entwicklung
+          h2 Mobile Entwicklung
           p.space-xl
             | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt.
             |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um.
@@ -85,7 +85,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
               = image_tag "avatar_dden_v3c.png"
         h2 Daniel Dengler
         p.space-l
-          = mail_to "dden@numz42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+          = mail_to "dden@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
 
 
       .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
@@ -190,6 +190,10 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .col-md-12
         .space-xl
         h1.space-l Jobs
+        p
+          |Im Moment haben wir keine Stellen ausgeschrieben.
+          br
+          |Wir freuen uns dennoch über Initiativbewerbungen oder ein einfaches "Hi, hier bin ich".
         / h1 Interesse bei uns mitzumachen?
         / h3 Einfach per E-Mail an <a href="mailto:jobs@num42.de">jobs@num42.de</a> wenden.
         .space-l
@@ -219,6 +223,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
       .col-md-12
         p.text-center.space-xl
           = link_to "Stellenausschreibungen", "jobs.html", class: "btn btn-primary btn-lg"
+
 .region id="prozess"
   .container
     .row.text-center
@@ -256,7 +261,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
             | Mit uns ist Ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen,
             |  technologische Weiterentwicklungen nötig sind oder Ihre Anwendung einfach einen neuen Anstrich braucht.
 
-.region
+.region.region-light
   .container
     .row.text-center
       .col-md-12
@@ -266,21 +271,24 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     .row.text-center
       .col-md-4
         .space-l
+        i.icon.icon-large.ion-ios-world-outline.font-red.space-l
         h2 Web
         .space-xl
           p Wir realisieren Anwendungen mit Hilfe moderner Standards wie HTML5, Ember.js und Ruby on Rails.
       .col-md-4
         .space-l
+        i.icon.icon-large.ion-social-apple-outline.font-red.space-l
         h2 iOS
         .space-xl
           p Apple-Geräte versorgen wir mit nativen und hybriden iOS-Apps mittels Objective-C, Swift und HTML.
       .col-md-4
         .space-l
+        i.icon.icon-large.ion-social-android-outline.font-red.space-l
         h2 Android
         .space-xl
           p Nativ in Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
 
-.region.region-light id="kontakt"
+.region id="kontakt"
   .container
     .row
       .col-md-12
@@ -369,7 +377,7 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         var marker = new google.maps.Marker({
           position: hqLatlng,
           map: map,
-          title:"Number 42, Franz-Mayer-Straße 1, 93053 Regensburg",
+          title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
           icon: "images/42.svg"
 
         });
