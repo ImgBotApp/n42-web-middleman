@@ -125,7 +125,7 @@ h3 {
 // Header
 
 #header {
-  background: url(image-path('header.png')) center;
+  background: url(image-path('header.jpg')) center;
   background-size: cover;
   height: 300px;
   border-bottom: 4px solid $red-color;
@@ -146,6 +146,10 @@ h3 {
     right: 0;
     display: none;
   }
+}
+
+.wordwrap {
+  word-wrap:break-word;
 }
 
 @media(min-width: $screen-md-min) {
@@ -324,7 +328,7 @@ textarea { resize:vertical; }
 }
 
 @media only screen and (min-width : 320px) {
-  .hidden-sm-down {display: grid;}
+  .hidden-sm-down {display: inline;}
   .hidden-sm-up {display: none;}
 }
 
@@ -337,6 +341,7 @@ textarea { resize:vertical; }
 .coin{
   perspective: 1000px;
   border-radius: 100%;
+  margin: auto;
 }
 
 .coin:hover .flipper, .coin.hover .flipper{
@@ -344,7 +349,7 @@ textarea { resize:vertical; }
 }
 
 .coin, .coin .front, .coin .back{
-  height: 256px;
+  max-height: 256px;
   max-width: 256px;
   width: 100%;
   border-radius: 100%;
@@ -373,6 +378,8 @@ textarea { resize:vertical; }
 
 
 .coin .front{
+  position:relative;
+  overflow:hidden;
   z-index: 2;
   transform: rotateY(0deg);
 }
