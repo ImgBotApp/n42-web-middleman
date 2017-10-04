@@ -20,11 +20,11 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     #main-nav.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a Referenzen
-        li
           a onclick="javascript:$('html, body').animate({
         scrollTop: $('#leistungen').offset().top - 50
     }, 500); $('.collapse').collapse('hide');" Leistungen
+        li
+          = link_to "Referenzen", "referenzen.html", class: ""
         li
           a onclick="javascript:$('html, body').animate({
         scrollTop: $('#team').offset().top - 50
@@ -37,6 +37,8 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
           a onclick="javascript:$('html, body').animate({
         scrollTop: $('#prozess').offset().top - 50
     }, 500); $('.collapse').collapse('hide');" Prozess
+        li
+          = link_to "Referenzen", "referenzen.html"
         li
           a onclick="javascript:$('html, body').animate({
         scrollTop: $('#kontakt').offset().top - 50
