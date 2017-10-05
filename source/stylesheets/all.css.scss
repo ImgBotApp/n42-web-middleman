@@ -90,7 +90,7 @@ h3 {
 
 .region-dark {
   background: $region-dark-color;
-  color: #fff;
+  //color: #fff;
 }
 
 .space-header {
@@ -361,6 +361,12 @@ textarea { resize:vertical; }
 
   position: relative;
   border-radius: 100%;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .coin .front, .coin .back{
