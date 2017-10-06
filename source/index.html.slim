@@ -37,6 +37,10 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
     }, 500); $('.collapse').collapse('hide');" Prozess
         li
           a onclick="javascript:$('html, body').animate({
+        scrollTop: $('#42Stacks').offset().top - 50
+    }, 500); $('.collapse').collapse('hide');" 42Stacks
+        li
+          a onclick="javascript:$('html, body').animate({
         scrollTop: $('#kontakt').offset().top - 50
     }, 500); $('.collapse').collapse('hide');" Kontakt
 
@@ -284,7 +288,42 @@ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
         .space-xl
           p Nativ in Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
 
-.region id="kontakt"
+
+
+.region id="42Stacks"
+  .container.hidden-xs
+    .row.space-header.text-center.no-print
+      .col-lg-12.space-l
+        h1 42Stacks -  Ihre Inhalte als App
+
+  .container.visible-xs
+    .row.text-center
+      .col-xs-12
+        h1 42Stacks
+        h2 Ihre Inhalte als App
+      .col-xs-12
+        p.space-xl
+          |42Stacks ist die Möglichkeit Ihr Produkt auf die bestmögliche Art und Weise zu präsentieren. Mit 42Stacks haben Sie zusammen mit Ihrem Smartphone jederzeit Ihr aktuelles Portfolio griffbereit und können so Ihrem Produkt immer und überall die richtige Plattform bieten.
+        row.center
+          p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
+      .col-xs-10.col-xs-offset-1
+        img src="images/home-4.png" alt="42Stacks App" 
+    
+  .container.hidden-xs
+    .row.flex-end
+      .col-sm-7.col-md-5.col-md-offset-1
+        img src="images/home-4.png" alt="42Stacks App" 
+      .col-sm-5.col-md-5.col-md-offset-1
+        p.space-xl
+          |42Stacks ist die Möglichkeit Ihr Produkt auf die bestmögliche Art und Weise zu präsentieren. Mit 42Stacks haben Sie zusammen mit Ihrem Smartphone jederzeit Ihr aktuelles Portfolio griffbereit und können so Ihrem Produkt immer und überall die richtige Plattform bieten.
+        row.center
+          p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
+
+      
+
+
+
+.region.region-light id="kontakt"
   .container
     .row
       .col-md-12

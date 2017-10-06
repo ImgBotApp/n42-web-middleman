@@ -45,7 +45,7 @@ activate :autoprefixer
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :rsync
-  deploy.host = "number42.de"
+  deploy.host = "ssh.number42.de"
   deploy.user = "ssh-264259-num42_web"
   deploy.path = "web"
   deploy.clean = true
