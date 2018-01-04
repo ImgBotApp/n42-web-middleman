@@ -32,5 +32,9 @@ nav.navbar.navbar-default.navbar-fixed-top.no-print role="navigation"
 
 
   .container
-        = partial "jobs_empty"
+    
+    / = partial "jobs_empty"
+    = partial "job_offers"
+    .hidden-sm.hidden-xs
+      .row
         = partial "jobs_footer"

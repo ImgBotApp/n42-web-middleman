@@ -21,6 +21,12 @@ i.ion-heart {
   animation:(pulsate 1.9s linear);
   animation-iteration-count:infinite;
 }
+@media print {
+  .col-xs-12 {
+    margin-left: 10%;
+    width: 100% !important;
+  }
+}
 
 @-webkit-keyframes pulsate {
   0% {opacity: 0.6;}
