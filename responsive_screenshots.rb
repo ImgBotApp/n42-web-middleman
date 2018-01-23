@@ -52,9 +52,9 @@ else
   for device in widths.keys
     if subpages
       for page in subpages
-        system("webkit2png -W #{widths[device]} --scale=1 -F --dir=responsive_screenshots/#{$timestamp}/#{page}/ --filename=#{device} #{url}#{page}")
+        system("webkit2png --ignore-ssl-check -W #{widths[device]} --scale=1 -F --dir=responsive_screenshots/#{$timestamp}/#{page}/ --filename=#{device} #{url}#{page}")
       end
     end
-    system("webkit2png -W #{widths[device]} --scale=1 -F --dir=responsive_screenshots/#{$timestamp} --filename=#{device} #{url}")
+    system("webkit2png --ignore-ssl-check -W #{widths[device]} --scale=1 -F --dir=responsive_screenshots/#{$timestamp} --filename=#{device} #{url}")
   end
 end
