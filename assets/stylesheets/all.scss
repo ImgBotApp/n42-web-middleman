@@ -1,14 +1,40 @@
 @charset "utf-8";
 
 
-@import "variables";
 @import "uikit/_import";
-@import "sites"
+@import "variables";
+@import "sites";
+
+$red-color: #D24335;
+$navbar-background: red;
+
+.n42-hero{
+  margin-top: -80px;
+}
+
+.n42-text-red{
+  color: $red-color;
+}
+
+.n42-red-border{
+  border-bottom: 4px solid $red-color;
+}
+
+.n42-text-shadow-light{
+  text-shadow:  2px 2px 4px #00000033, 2px 2px 15px #00000069;
+}
+.n42-height-large{
+  height: 700px;
+}
+
+.n42-avatar h2{
+  margin-top: 10px;
+}
 
 
-// $region-light-color: #fff;
-// $region-dark-color: #ececec;
-// $default-space: 30px;
+$region-light-color: #fff;
+$region-dark-color: #ececec;
+$default-space: 30px;
 //
 //
 // // the heart is important
@@ -33,43 +59,43 @@
 //   100% {opacity: 0.6;}
 // }
 //
-// body {
-//   font-family: "Roboto-Light", sans-serif;
-// }
-//
-// img {
-//   width: 100%;
-// }
-//
-// h1 {
-//   font-family: "Roboto-Light", sans-serif;
-//   font-size: 3em;
-//   color: #6c6c6c;
-// }
-//
-// h2 {
-//   font-family: "Roboto-Regular", sans-serif;
-//   font-size: 1.8em;
-// }
-//
-// h3 {
-//   font-family: "Roboto-Regular", sans-serif;
-//   font-size: 1.1em;
-// }
-//
-// .row {
-//   p, li{
-//     font-size: 1.1em;
-//     line-height: 1.6em;
-//     color: #6c6c6c;
-//     b {
-//       font-family: "Roboto-Regular", sans-serif;
-//       color: #333333;
-//       font-weight: normal;
-//     }
-//   }
-// }
-//
+body {
+  font-family: "Roboto-Light", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 3em;
+  color: #6c6c6c;
+}
+
+h2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.8em;
+}
+
+h3 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.1em;
+}
+
+.row {
+  p, li{
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6c6c6c;
+    b {
+      font-family: "Roboto-Regular", sans-serif;
+      color: #333333;
+      font-weight: normal;
+    }
+  }
+}
+
 // .icon-medium {
 //   font-size: $default-space * 1.5;
 // }
@@ -343,30 +369,30 @@
 // }
 //
 //
-// .coin{
-//   perspective: 1000px;
-//   border-radius: 100%;
-//   margin: auto;
-// }
-//
-// .coin:hover .flipper, .coin.hover .flipper{
-//   transform: rotateY(180deg);
-// }
-//
-// .coin, .coin .front, .coin .back{
-//   max-height: 256px;
-//   max-width: 256px;
-//   width: 100%;
-//   border-radius: 100%;
-// }
-//
-// .coin .flipper{
-//   transition: 0.6s transform ease-in-out;
-//   transform-style: preserve-3d;
-//
-//   position: relative;
-//   border-radius: 100%;
-// }
+.coin{
+  perspective: 1000px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.coin:hover .flipper, .coin.hover .flipper{
+  transform: rotateY(180deg);
+}
+
+.coin, .coin .front, .coin .back{
+  max-height: 256px;
+  max-width: 256px;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.coin .flipper{
+  transition: 0.6s transform ease-in-out;
+  transform-style: preserve-3d;
+
+  position: relative;
+  border-radius: 100%;
+}
 //
 // .flex-end {
 //   display: flex;
@@ -374,27 +400,27 @@
 //   align-items: flex-end;
 // }
 //
-// .coin .front, .coin .back{
-//   backface-visibility: hidden;
-//
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//
-//   img{
-//     border-radius: 100%;
-//     display: block;
-//   }
-// }
-//
-//
-// .coin .front{
-//   position:relative;
-//   overflow:hidden;
-//   z-index: 2;
-//   transform: rotateY(0deg);
-// }
-//
-// .coin .back{
-//   transform: rotateY(180deg);
-// }
+.coin .front, .coin .back{
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img{
+    border-radius: 100%;
+    display: block;
+  }
+}
+
+
+.coin .front{
+  position:relative;
+  overflow:hidden;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.coin .back{
+  transform: rotateY(180deg);
+}

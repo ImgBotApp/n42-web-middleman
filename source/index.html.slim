@@ -4,40 +4,41 @@ preview_image: images/og_image.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 ---
 
-nav(class="uk-navbar-container" uk-navbar)
-  div.uk-navbar-left
-    ul.uk-navbar-nav
-      li
-        a href="index.html"
-          = image_tag "logo.svg", alt: "Number42"
-  div.uk-navbar-right
-    ul.uk-navbar-nav
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#leistungen').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" Leistungen
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#team').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" Team
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#jobs').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" Jobs
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#prozess').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" Prozess
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#42Stacks').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" 42Stacks
-      li
-        = link_to "Referenzen", "referenzen.html"
-      li
-        a onclick="javascript:$('html, body').animate({
-          scrollTop: $('#kontakt').offset().top - 50
-          }, 500); $('.collapse').collapse('hide');" Kontakt
+div uk-sticky=''
+  nav class="uk-navbar-container n42-navbar" uk-navbar=''
+    div.uk-navbar-left
+      ul.uk-navbar-nav
+        li
+          a href="index.html"
+            = image_tag "logo.svg", alt: "Number42"
+    div.uk-navbar-right
+      ul.uk-navbar-nav
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#leistungen').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" Leistungen
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#team').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" Team
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#jobs').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" Jobs
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#prozess').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" Prozess
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#42Stacks').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" 42Stacks
+        li
+          = link_to "Referenzen", "referenzen.html"
+        li
+          a onclick="javascript:$('html, body').animate({
+            scrollTop: $('#kontakt').offset().top - 50
+            }, 500); $('.collapse').collapse('hide');" Kontakt
 
 
     / .navbar-header
@@ -51,163 +52,140 @@ nav(class="uk-navbar-container" uk-navbar)
 
 
 
-.region#header
-  h1
-    | Die Antwort auf
-    br
-    | Ihre App Idee.
-.region.region-light
-  .container#leistungen
-    .row
-      .col-sm-6.col-md-4.col-md-offset-1
-        .space-l
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-keypad-outline.font-red.space-l
-          h2 Mobile Entwicklung
-          p.space-xl
-            | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt.
-            |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um.
+div.uk-cover-container.n42-height-large.n42-red-border.n42-hero
+  img(src="images/header.jpg" uk-cover )
+  div.uk-overlay.uk-light.uk-position-center-left.n42-text-shadow-light
+    h1
+      | Die Antwort auf
+      br
+      | Ihre App Idee.
+div.uk-section
+  div.uk-container
+    div(class="uk-child-width-1-4 uk-grid uk-text-center uk-flex-around uk-margin-medium-top" uk-grid)
+      div
+        span.n42-text-red uk-icon="icon: phone; ratio: 3"
+        h2 Mobile Entwicklung
+        p
+          | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt.
+          |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um.
+      div
+        span.n42-text-red uk-icon="icon: desktop; ratio: 3"
+        h2 Web Entwicklung
+        p.
+          | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
+          |  komplexe Backend-Systeme, wir finden für Sie genau die Lösung, die Sie brauchen.
 
-
-      .col-sm-6.col-md-4.col-md-offset-2
-        .space-l
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-monitor-outline.font-red.space-l
-          h2 Web Entwicklung
-          p.space-xl
-            | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
-            |  komplexe Backend-Systeme, wir finden für Sie genau die Lösung, die Sie brauchen.
-
-.region id="team"
-  .container
-    .row
-      .col-md-12.text-center
-        .space-xl
-        h1.space-l  Team
-
-    .row.text-center
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+div.uk-section.uk-section-muted
+  div.uk-container
+    h1.uk-text-center Team
+    div.uk-flex.uk-flex-around uk-grid=''
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_dden_v3.png"
             .back
               = image_tag "avatar_dden_v3c.png"
-        h2 Daniel Dengler
-        p.space-l
-          = mail_to "dden@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Daniel Dengler
+        p.uk-margin-small-top
+          = mail_to "dden@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_dkra_v3.png"
             .back
               = image_tag "avatar_dkra_v3c.png"
-        h2 David Kraus
-        p.space-l
-          = mail_to "dkra@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom David Kraus
+        p.uk-margin-small-top
+          = mail_to "dkra@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_wlut_v3.png"
             .back
               = image_tag "avatar_wlut_v3c.png"
-        h2 Wolfgang Lutz
-        p.space-l
-          = mail_to "wlut@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Wolfgang Lutz
+        p.uk-margin-small-top
+          = mail_to "wlut@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_asol_v3.png"
             .back
               = image_tag "avatar_asol_v3c.png"
-        h2 Andreas Solleder
-        p.space-l
-          = mail_to "asol@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Andreas Solleder
+        p.uk-margin-small-top
+          = mail_to "asol@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_msch_v3.png"
             .back
               = image_tag "avatar_msch_v3c.png"
-        h2 Maike Schmargendorf
-        p.space-l
-          = mail_to "msch@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Maike Schmargendorf
+        p.uk-margin-small-top
+          = mail_to "msch@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_hsch_v3.png"
             .back
               = image_tag "avatar_hsch_v3c.png"
-        h2 Hans-Martin Schuller
-        p.space-l
-          = mail_to "hsch@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Hans-Martin Schuller
+        p.uk-margin-small-top
+          = mail_to "hsch@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_mwin_v3.png"
             .back
               = image_tag "avatar_mwin_v3c.png"
-        h2 Maximiliane Windl
-        p.space-l
-          = mail_to "mwin@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Maximiliane Windl
+        p.uk-margin-small-top
+          = mail_to "mwin@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
 
-      .col-xs-8.col-xs-offset-2.col-sm-6.col-sm-offset-0.col-md-3
-        .space-l
+      div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
           .flipper
             .front
               = image_tag "avatar_hheu_v3.png"
             .back
               = image_tag "avatar_hheu_v3c.png"
-        h2 Hannes Heuberger
-        p.space-l
-          = mail_to "hheu@num42.de", "<i class='icon icon-medium ion-ios-email-outline font-red'></i>"
+        h2.uk-margin-remove-bottom Hannes Heuberger
+        p.uk-margin-small-top
+          = mail_to "hheu@num42.de", "<span uk-icon='icon: mail; ratio: 1.8' class='n42-text-red'></span>"
+
+    p.uk-margin-medium-top.uk-text-center
+      | Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf,
+      |  sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei
+      |  mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design
+      |  verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung.
+      |  Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 
 
+.uk-section
+  .uk-container.uk-text-center
+    h1 Jobs
+    p
+      |Im Moment haben wir keine Stellen ausgeschrieben.
+      br
+      |Wir freuen uns dennoch über Initiativbewerbungen oder ein einfaches "Hi, hier bin ich".
+    = link_to "Stellenausschreibungen", "jobs.html", class: "uk-button uk-button-default"
+    / h1 Interesse bei uns mitzumachen?
+    / h3 Einfach per E-Mail an <a href="mailto:jobs@num42.de">jobs@num42.de</a> wenden.
 
-    .row.text-center
-      .col-md-12
-        p.space-l
-          | Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf,
-          |  sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei
-          |  mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design
-          |  verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung.
-          |  Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
-
-
-.region.region-light id="jobs"
-  .container#jobs
-    .row.text-center
-      .col-md-12
-        .space-xl
-        h1.space-l Jobs
-        p
-          |Im Moment haben wir keine Stellen ausgeschrieben.
-          br
-          |Wir freuen uns dennoch über Initiativbewerbungen oder ein einfaches "Hi, hier bin ich".
-        / h1 Interesse bei uns mitzumachen?
-        / h3 Einfach per E-Mail an <a href="mailto:jobs@num42.de">jobs@num42.de</a> wenden.
-        .space-l
 
 
     / .row
@@ -230,70 +208,53 @@ nav(class="uk-navbar-container" uk-navbar)
     /      p.space-xl
     /       | Du bist Studentin/Student, hast ein Auge fürs Detail, gestaltest gern, kennst den Unterschied zwischen einer Vektorgrafik, einem PNG und einem JPEG und möchtest praktische Erfahrung als Designerin/Designer sammeln?
 
-    row
-      .col-md-12
-        p.text-center.space-xl
-          = link_to "Stellenausschreibungen", "jobs.html", class: "btn btn-primary btn-lg"
 
-.region id="prozess"
-  .container
-    .row.text-center
-      .col-md-12
-        .space-xl
-        h1.space-l  Prozess
-    .row
-      .col-md-3
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-compose-outline.font-red.space-l
-          h2 Beratung
-          p.space-xl
-            | Sie sind Experte in Ihrem Bereich, wir in unserem. Darum setzen wir auf eine gemeinsame Ausarbeitung Ihrer Idee, so dass Sie ein Ergebnis erhalten, das funktioniert.
+.uk-section.uk-section-muted.uk-text-center
+  h1 Prozess
+  .uk-container
+    .uk-grid.uk-child-width-1-4
+      div
+        i.icon.icon-large.ion-ios-compose-outline.font-red.space-l
+        h2 Beratung
+        p
+          | Sie sind Experte in Ihrem Bereich, wir in unserem. Darum setzen wir auf eine gemeinsame Ausarbeitung Ihrer Idee, so dass Sie ein Ergebnis erhalten, das funktioniert.
 
-      .col-md-3
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-gear-outline.font-red.space-l
-          h2 Entwicklung
-          p.space-xl
-            | Ihr Produkt soll innovativ sein, also entwickeln wir auch so. Durch dynamisches Projektmanagement, unkomplizierte Kommunikation und der Nutzung neuester technologischer Standards machen wir für Sie und Ihr Produkt den Unterschied.
-      .col-md-3
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-analytics-outline.font-red.space-l
-          h2 Test
-          p.space-xl
-            | Vorsicht ist besser als Nachsicht. Das gilt auch bei uns, denn durch regelmäßiges, professionelles Testing noch während der Entwicklung sehen wir Probleme sofort – und lösen sie.
-      .col-md-3
-        .space-l.text-center
-          i.icon.icon-large.ion-ios-speedometer-outline.font-red.space-l
-          h2 Betrieb
-          p.space-xl
-            | Mit uns ist Ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen, technologische Weiterentwicklungen nötig sind oder Ihre Anwendung einfach einen neuen Anstrich braucht.
+      div
+        i.icon.icon-large.ion-ios-gear-outline.font-red.space-l
+        h2 Entwicklung
+        p.space-xl
+          | Ihr Produkt soll innovativ sein, also entwickeln wir auch so. Durch dynamisches Projektmanagement, unkomplizierte Kommunikation und der Nutzung neuester technologischer Standards machen wir für Sie und Ihr Produkt den Unterschied.
 
-.region.region-light
-  .container
-    .row.text-center
-      .col-md-12
-        .space-xl
-        h1.space-l Technologie
+      div
+        i.icon.icon-large.ion-ios-analytics-outline.font-red.space-l
+        h2 Test
+        p.space-xl
+          | Vorsicht ist besser als Nachsicht. Das gilt auch bei uns, denn durch regelmäßiges, professionelles Testing noch während der Entwicklung sehen wir Probleme sofort – und lösen sie.
 
-    .row.text-center
-      .col-md-4
-        .space-l
-        i.icon.icon-large.ion-ios-world-outline.font-red.space-l
+      div
+        i.icon.icon-large.ion-ios-speedometer-outline.font-red.space-l
+        h2 Betrieb
+        p.space-xl
+          | Mit uns ist Ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen, technologische Weiterentwicklungen nötig sind oder Ihre Anwendung einfach einen neuen Anstrich braucht.
+
+.uk-section.uk-text-center
+  h1 Technologie
+  .uk-container
+    .uk-grid.uk-child-width-1-3
+      div
+        i.icon.icon-large.ion-ios-compose-outline.font-red.space-l
         h2 Web
-        .space-xl
-          p Wir realisieren Anwendungen mit Hilfe moderner Standards wie HTML5, Ember.js und Ruby on Rails.
-      .col-md-4
-        .space-l
-        i.icon.icon-large.ion-social-apple-outline.font-red.space-l
+        p Wir realisieren Anwendungen mit Hilfe moderner Standards wie HTML5, Ember.js und Ruby on Rails.
+
+      div
+        i.icon.icon-large.ion-ios-gear-outline.font-red.space-l
         h2 iOS
-        .space-xl
-          p Apple-Geräte versorgen wir mit nativen und hybriden iOS-Apps mittels Objective-C, Swift und HTML.
-      .col-md-4
-        .space-l
-        i.icon.icon-large.ion-social-android-outline.font-red.space-l
+        p Apple-Geräte versorgen wir mit nativen und hybriden iOS-Apps mittels Objective-C, Swift und HTML.
+
+      div
+        i.icon.icon-large.ion-ios-speedometer-outline.font-red.space-l
         h2 Android
-        .space-xl
-          p Nativ in Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
+        p Nativ in Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
 
 
 
@@ -335,17 +296,17 @@ nav(class="uk-navbar-container" uk-navbar)
         h1.space-l.text-center Kontakt
     .row
       .col-md-7
-        h2 Was können wir für Sie tun?
-        p.space-l
+        h2.uk-margin-remove-bottom Was können wir für Sie tun?
+        p.uk-margin-small-top
           | Interesse? Fragen? Nutzen Sie unser Formular oder schreiben Sie uns direkt an&#32;
           = mail_to "info@num42.de"
           | . Wir freuen uns auf Ihre Nachricht!
 
-        p.space-l id="thank_you_message"
-          | Vielen Dank für Ihre Nachricht.
+  .uk-margin-remove-bottom      p.uk-margin-remove-top id="thank_you_message"
+.uk-margin-top-smallr Ihre Nachricht.
 
-        p.space-l id="error_message"
-          | Leider konnte die Nachricht nicht übermittelt werden. Probieren Sie es später noch einmal oder senden Sie eine E-Mail an
+  .uk-margin-remove-bottom      p.uk-margin-remove-top id="error_message"
+.uk-margin-top-smalldie Nachricht nicht übermittelt werden. Probieren Sie es später noch einmal oder senden Sie eine E-Mail an
           = mail_to "info@num42.de"
           |.
 
