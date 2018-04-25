@@ -270,7 +270,7 @@ div.uk-section.uk-section-muted
 /         p 42Stacks ist die Möglichkeit Ihr Produkt auf die bestmögliche Art und Weise zu präsentieren. Mit 42Stacks haben Sie zusammen mit Ihrem Smartphone jederzeit Ihr aktuelles Portfolio griffbereit und können so Ihrem Produkt immer und überall die richtige Plattform bieten.
 /         p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
 
-section.uk-section.mb0.uk-text-center
+section.uk-section.mb0.uk-text-center.uk-section-muted.uk-padding-remove-bottom
   div.uk-container.uk-container-small.n42-container.mb0
     .uk-margin-large
       h1.n42-section-header Wie sieht Ihre App aus?
@@ -311,13 +311,38 @@ section.uk-section.mb0.uk-text-center
   /       row.center
   /         p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
 
+section.uk-section.uk-text-center
+  div.uk-container.uk-container-small.n42-container
+    h1.n42-section-header Kontakt
+    div.uk-margin
+      p Wenn wir Ihr Interesse geweckt haben, können Sie uns jederzeit Ihre Fragen stellen oder auch gleich ein unverbindliches und kostenloses Angebot anfordern. Wir melden uns schnellstmöglich bei Ihnen.
 
-h1 Kontakt
-h2 Was können wir für Sie tun?
-p
-  | Interesse? Fragen? Nutzen Sie unser Formular oder schreiben Sie uns direkt an&#32;
-  = mail_to "info@num42.de"
-  | . Wir freuen uns auf Ihre Nachricht!
+    div uk-grid='' class="uk-grid-medium uk-flex-center uk-child-width-1-4@l uk-child-width-1-3@s uk-child-width-1-1"
+      div
+        p
+          span.contact uk-icon="icon: mail; ratio:2"
+          br
+          a.n42-link href="mailto:info@42stacks.de"
+            |info@42stacks.de
+
+      div
+        p
+          span.contact uk-icon="icon: location;  ratio: 2"
+          br
+          span Franz-Mayer-Straße 1
+          br
+          span 93053 Regensburg
+          br
+          a.n42-link href="/anfahrt.html"
+            |Anfahrtsbeschreibung
+
+      div
+        p
+          span.contact uk-icon="icon: receiver;  ratio: 2"
+          br
+          a.n42-link href="tel:+49 (0)941 / 20 00 08 70"
+            |+49 (0)941 / 20 00 08 70
+
 
 
 .region

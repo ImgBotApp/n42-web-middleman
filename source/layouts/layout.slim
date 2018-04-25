@@ -30,20 +30,17 @@ html lang="en" prefix="og: http://ogp.me/ns#"
       iframe src="https://www.googletagmanager.com/ns.html?idGTM-M8P9B3" height="0" width="0" style="display:none;visibility:hidden"
     = yield
 
-    footer.footer.no-print
-      .container
-        .row
-          .col-sm-12
-            p.text-center
-              = link_to "Impressum", "impressum.html"
-              |&nbsp;|&nbsp;
-              = link_to "Datenschutzerklärung", "datenschutz.html"
-              |&nbsp;|&nbsp;
-              = link_to "Cookie-Richtline", "cookie_richtlinie.html"
-        .row
-          .col-sm-12.text-center
-            p
-              | Made with <i class="ion-heart"></i> in Bavaria
+    footer.n42-footer
+      div.uk-section.uk-section-muted.uk-text-center.uk-padding-small
+       div.uk-container
+          p
+            = link_to "Impressum", "impressum.html"
+            |&nbsp;|&nbsp;
+            = link_to "Datenschutzerklärung", "datenschutz.html"
+            |&nbsp;|&nbsp;
+            = link_to "Cookie-Richtline", "cookie_richtlinie.html"
+          p
+            | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
 
 
     / javascript:

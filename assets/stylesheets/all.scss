@@ -8,6 +8,16 @@
 $red-color: #D24335;
 $navbar-background: red;
 
+.n42-footer{
+  font-size: 0.8em;
+  a{
+    color: $red-color;
+  }
+  span{
+    color: $red-color
+  }
+}
+
 .n42-hero{
   margin-top: -80px;
 }
