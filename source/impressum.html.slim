@@ -6,48 +6,45 @@ preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entw
 ---
 
 
-nav.navbar.navbar-default.navbar-fixed-top role="navigation"
-  .container-fluid
-    /! Brand and toggle get grouped for better mobile display
-    .navbar-header
-      a.navbar-brand href="index.html"
-        = image_tag "logo.svg", alt: "Number42"
+div uk-sticky=''
+  nav class="uk-navbar-container n42-navbar" uk-navbar=''
+    div.uk-navbar-left
+      ul.uk-navbar-nav
+        li
+          a href="index.html"
+            = image_tag "logo.svg", alt: "Number42"
 
-.region.region-light#imprint
-  .container
-    .row.space-header
-      .col-md-12
-        h2.space-l Impressum
+section.uk-section
+  div.uk-container
+    h2 Impressum
 
-    .row
-      .col-md-12
-        p
-          | Number42 GmbH
-          br
-          | Franz-Mayer-Straße 1
-          br
-          | 93053 Regensburg
-          br
-          | Germany
+    p
+      | Number42 GmbH
+      br
+      | Franz-Mayer-Straße 1
+      br
+      | 93053 Regensburg
+      br
+      | Germany
 
-        p
-          | E-Mail&nbsp;
-          = link_to "info@num42.de", "mailto:info@num42.de"
-        p
-          | Tel.&nbsp;
-          = link_to "+49 (0)941 / 20 00 08 70", "tel:+4994120000870"
+    p
+      | E-Mail&nbsp;
+      = link_to "info@num42.de", "mailto:info@num42.de"
+      br
+      | Tel.&nbsp;
+      = link_to "+49 (0)941 / 20 00 08 70", "tel:+4994120000870"
 
 
-        p.space-xl
-          |Geschäftsführer: Daniel Dengler
-          br
-          |Handelsregister-Gericht: Amtsgericht Regensburg
-          br
-          |Handelsregister-Nr.: HRB 16147
-          br
-          |USt-IdNr. DE 313 579 989
+    p
+      |Geschäftsführer: Daniel Dengler
+      br
+      |Handelsregister-Gericht: Amtsgericht Regensburg
+      br
+      |Handelsregister-Nr.: HRB 16147
+      br
+      |USt-IdNr. DE 313 579 989
 
-        p.space.mtmd
-          |Bildrechte im dargestellten PURE Beispielstack
-          a href='http://www.florianhammerich.com/portfolio/restaurant-storstad/?id=851'
-            |&nbsp;Florian Hammerich
+    p
+      |Bildrechte im dargestellten PURE Beispielstack
+      a href='http://www.florianhammerich.com/portfolio/restaurant-storstad/?id=851'
+        |&nbsp;Florian Hammerich

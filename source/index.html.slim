@@ -14,31 +14,25 @@ div uk-sticky=''
     div.uk-navbar-right
       ul.uk-navbar-nav
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#leistungen').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" Leistungen
+          a href="#leistungen" uk-scroll='duration: 200'
+           | Leistungen
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#team').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" Team
+          a onclick="javascript:$('html, body').animate({scrollTop: $('#team').offset().top - 50}, 500);"
+            | Team
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#jobs').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" Jobs
+          a onclick="javascript:$('html, body').animate({scrollTop: $('#jobs').offset().top - 50}, 500);"
+            | Jobs
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#prozess').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" Prozess
+          a onclick="javascript:$('html, body').animate({scrollTop: $('#prozess').offset().top - 50}, 500);"
+            | Prozess
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#42Stacks').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" 42Stacks
+          a onclick="javascript:$('html, body').animate({scrollTop: $('#42Stacks').offset().top - 50}, 500);"
+            | 42Stacks
         li
           = link_to "Referenzen", "referenzen.html"
         li
-          a onclick="javascript:$('html, body').animate({
-            scrollTop: $('#kontakt').offset().top - 50
-            }, 500); $('.collapse').collapse('hide');" Kontakt
+          a onclick="javascript:$('html, body').animate({scrollTop: $('#kontakt').offset().top - 50}, 500);"
+            | Kontakt
 
 
     / .navbar-header
@@ -59,7 +53,7 @@ div.uk-cover-container.n42-height-large.n42-red-border.n42-hero
       | Die Antwort auf
       br
       | Ihre App Idee.
-div.uk-section
+div.uk-section#leistungen
   div.uk-container
     div(class="uk-child-width-1-4 uk-grid uk-text-center uk-flex-around uk-margin-medium-top" uk-grid)
       div
@@ -75,9 +69,9 @@ div.uk-section
           | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
           |  komplexe Backend-Systeme, wir finden für Sie genau die Lösung, die Sie brauchen.
 
-div.uk-section.uk-section-muted
+div.uk-section.uk-section-muted#team
   div.uk-container
-    h1.uk-text-center Team
+    h1.uk-text-center.uk-margin-medium-bottom Team
     div class="uk-grid-medium uk-flex-center uk-child-width-1-5@l uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid=''
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -86,7 +80,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_dden_v3.png"
             .back
               = image_tag "avatar_dden_v3c.png"
-        p.uk-margin-remove-bottom Daniel Dengler
+        h3.uk-margin-small-top.uk-margin-bottom Daniel Dengler
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -95,7 +89,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_dkra_v3.png"
             .back
               = image_tag "avatar_dkra_v3c.png"
-        p.uk-margin-remove-bottom David Kraus
+        h3.uk-margin-small-top.uk-margin-bottom David Kraus
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -104,7 +98,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_wlut_v3.png"
             .back
               = image_tag "avatar_wlut_v3c.png"
-        p.uk-margin-remove-bottom Wolfgang Lutz
+        h3.uk-margin-small-top.uk-margin-bottom Wolfgang Lutz
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -113,7 +107,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_asol_v3.png"
             .back
               = image_tag "avatar_asol_v3c.png"
-        p.uk-margin-remove-bottom Andreas Solleder
+        h3.uk-margin-small-top.uk-margin-bottom Andreas Solleder
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -122,7 +116,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_msch_v3.png"
             .back
               = image_tag "avatar_msch_v3c.png"
-        p.uk-margin-remove-bottom Maike Schmargendorf
+        h3.uk-margin-small-top.uk-margin-bottom Maike Schmargendorf
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -131,7 +125,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_hsch_v3.png"
             .back
               = image_tag "avatar_hsch_v3c.png"
-        p.uk-margin-remove-bottom Hans-Martin Schuller
+        h3.uk-margin-small-top.uk-margin-bottom Hans-Martin Schuller
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -140,7 +134,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_mwin_v3.png"
             .back
               = image_tag "avatar_mwin_v3c.png"
-        p.uk-margin-remove-bottom Maximiliane Windl
+        h3.uk-margin-small-top.uk-margin-bottom Maximiliane Windl
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -149,7 +143,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_hheu_v3.png"
             .back
               = image_tag "avatar_hheu_v3c.png"
-        p.uk-margin-remove-bottom Hannes Heuberger
+        h3.uk-margin-small-top.uk-margin-bottom Hannes Heuberger
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -158,7 +152,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_mklo_v3.png"
             .back
               = image_tag "avatar_mklo_v3c.png"
-        p.uk-margin-remove-bottom Hannes Heuberger
+        h3.uk-margin-small-top.uk-margin-bottom Hannes Heuberger
 
       div.uk-text-center.n42-avatar
         .coin ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');"
@@ -167,7 +161,7 @@ div.uk-section.uk-section-muted
               = image_tag "avatar_jmah_v3.png"
             .back
               = image_tag "avatar_jmah_v3c.png"
-        p.uk-margin-remove-bottom Hannes Heuberger
+        h3.uk-margin-small-top.uk-margin-bottom Hannes Heuberger
 
     p.uk-margin-medium-top.uk-text-center
       | Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf,
@@ -177,7 +171,7 @@ div.uk-section.uk-section-muted
       |  Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 
 
-.uk-section
+.uk-section#jobs
   .uk-container.uk-text-center
     h1 Jobs
     p
@@ -212,7 +206,7 @@ div.uk-section.uk-section-muted
     /       | Du bist Studentin/Student, hast ein Auge fürs Detail, gestaltest gern, kennst den Unterschied zwischen einer Vektorgrafik, einem PNG und einem JPEG und möchtest praktische Erfahrung als Designerin/Designer sammeln?
 
 
-.uk-section.uk-section-muted.uk-text-center
+.uk-section.uk-section-muted.uk-text-center#prozess
   h1 Prozess
   .uk-container
     .uk-grid.uk-child-width-1-4
@@ -270,7 +264,7 @@ div.uk-section.uk-section-muted
 /         p 42Stacks ist die Möglichkeit Ihr Produkt auf die bestmögliche Art und Weise zu präsentieren. Mit 42Stacks haben Sie zusammen mit Ihrem Smartphone jederzeit Ihr aktuelles Portfolio griffbereit und können so Ihrem Produkt immer und überall die richtige Plattform bieten.
 /         p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
 
-section.uk-section.mb0.uk-text-center.uk-section-muted.uk-padding-remove-bottom
+section.uk-section.mb0.uk-text-center.uk-section-muted.uk-padding-remove-bottom#42Stacks
   div.uk-container.uk-container-small.n42-container.mb0
     .uk-margin-large
       h1.n42-section-header Wie sieht Ihre App aus?
@@ -311,7 +305,7 @@ section.uk-section.mb0.uk-text-center.uk-section-muted.uk-padding-remove-bottom
   /       row.center
   /         p.space-xl = link_to "Mehr zu 42Stacks", "https://42stacks.com/", class: "btn btn-primary btn-lg"
 
-section.uk-section.uk-text-center
+section.uk-section.uk-text-center#kontakt
   div.uk-container.uk-container-small.n42-container
     h1.n42-section-header Kontakt
     div.uk-margin
@@ -320,14 +314,14 @@ section.uk-section.uk-text-center
     div uk-grid='' class="uk-grid-medium uk-flex-center uk-child-width-1-4@l uk-child-width-1-3@s uk-child-width-1-1"
       div
         p
-          span.contact uk-icon="icon: mail; ratio:2"
+          span.contact.uk-margin-small-bottom uk-icon="icon: mail; ratio:2"
           br
           a.n42-link href="mailto:info@42stacks.de"
             |info@42stacks.de
 
       div
         p
-          span.contact uk-icon="icon: location;  ratio: 2"
+          span.contact.uk-margin-small-bottom uk-icon="icon: location;  ratio: 2"
           br
           span Franz-Mayer-Straße 1
           br
@@ -338,7 +332,7 @@ section.uk-section.uk-text-center
 
       div
         p
-          span.contact uk-icon="icon: receiver;  ratio: 2"
+          span.contact.uk-margin-small-bottom uk-icon="icon: receiver;  ratio: 2"
           br
           a.n42-link href="tel:+49 (0)941 / 20 00 08 70"
             |+49 (0)941 / 20 00 08 70
@@ -346,91 +340,91 @@ section.uk-section.uk-text-center
 
 
 .region
-  #map_canvas
+  div#map_canvas style="height: 400px; width: 100%"
 
 
-    javascript:
+  javascript:
 
-      function init_google_maps() {
-        var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: hqLatlng,
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          draggable: false,
-          zoomControl: false,
-          scaleControl: false,
-          scrollwheel: false,
-          disableDoubleClickZoom: true,
-          disableDefaultUI: true
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var marker = new google.maps.Marker({
-          position: hqLatlng,
-          map: map,
-          title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
-          icon: "images/42.svg"
-
-        });
+    function init_google_maps() {
+      var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
+      var mapCanvas = document.getElementById('map_canvas');
+      var mapOptions = {
+        center: hqLatlng,
+        zoom: 14,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        draggable: false,
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        disableDefaultUI: true
       }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
+      var marker = new google.maps.Marker({
+        position: hqLatlng,
+        map: map,
+        title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
+        icon: "images/42.svg"
 
-      function init_contact_form() {
-        $("#contact_button").click(function(){
-          $("#error_message").hide();
+      });
+    }
 
-          formArray = $("#contact_form").serializeArray();
-          form_valid = true;
+    function init_contact_form() {
+      $("#contact_button").click(function(){
+        $("#error_message").hide();
 
-          $.each(formArray, function(i, v) {
-            if(v.name === "email") {
-              if (v.value != ""){
-                $(".contact-email").addClass("valid")
-              } else {
-                form_valid = false;
-                $(".contact-email").removeClass("valid")
-              }
+        formArray = $("#contact_form").serializeArray();
+        form_valid = true;
+
+        $.each(formArray, function(i, v) {
+          if(v.name === "email") {
+            if (v.value != ""){
+              $(".contact-email").addClass("valid")
+            } else {
+              form_valid = false;
+              $(".contact-email").removeClass("valid")
             }
+          }
 
-            if(v.name === "message") {
-              if (v.value != ""){
-                $(".contact-message").addClass("valid")
-              } else {
-                form_valid = false;
-                $(".contact-message").removeClass("valid")
-              }
+          if(v.name === "message") {
+            if (v.value != ""){
+              $(".contact-message").addClass("valid")
+            } else {
+              form_valid = false;
+              $(".contact-message").removeClass("valid")
             }
+          }
 
-            if(v.name === "realname") {
-              if (v.value != ""){
-                $(".contact-name").addClass("valid")
-              } else {
-                form_valid = false;
-                $(".contact-name").removeClass("valid")
-              }
+          if(v.name === "realname") {
+            if (v.value != ""){
+              $(".contact-name").addClass("valid")
+            } else {
+              form_valid = false;
+              $(".contact-name").removeClass("valid")
             }
-          });
-
-          if(form_valid) {
-            $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
-              $("#thank_you_message").show();
-              $("#contact_form").hide();
-              $("#contact_button").hide();
-            }).fail(
-              function() {
-                $("#error_message").show();
-              }
-            );
-          };
-
+          }
         });
 
+        if(form_valid) {
+          $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
+            $("#thank_you_message").show();
+            $("#contact_form").hide();
+            $("#contact_button").hide();
+          }).fail(
+            function() {
+              $("#error_message").show();
+            }
+          );
+        };
 
-      }
+      });
 
-      function initialize() {
-        init_google_maps();
-        init_contact_form();
-      }
 
-      google.maps.event.addDomListener(window, 'load', initialize);
+    }
+
+    function initialize() {
+      init_google_maps();
+      init_contact_form();
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
