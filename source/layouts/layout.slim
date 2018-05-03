@@ -21,25 +21,27 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     /! WARNING: Respond.js doesn't work if you view the page via file://
     /![if lt IE 9]
       = javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
-
+    = stylesheet_link_tag "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
 
   body class=page_classes
     noscript
       iframe src="https://www.googletagmanager.com/ns.html?idGTM-M8P9B3" height="0" width="0" style="display:none;visibility:hidden"
-    = yield
+    div.wrapper
+      = yield
 
+      div.push
     footer.n42-footer
       div.uk-section.uk-section-muted.uk-text-center.uk-padding-small
-       div.uk-container
+       div.uk-container.uk-margin-top
           p
             = link_to "Impressum", "impressum.html"
             |&nbsp;|&nbsp;
             = link_to "Datenschutzerklärung", "datenschutz.html"
             |&nbsp;|&nbsp;
             = link_to "Cookie-Richtline", "cookie_richtlinie.html"
-          p
+            br
             | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
 
 

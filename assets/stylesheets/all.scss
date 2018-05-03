@@ -4,9 +4,52 @@
 @import "variables";
 @import "uikit/_import";
 @import "sites";
+@import "font";
 
 $red-color: #D24335;
 $navbar-background: red;
+
+html,body{
+  height: 100%;
+}
+a{
+  color: $red-color;
+}
+
+.n42-icons{
+  font-size: 60px;
+  color: $red-color;
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -5.8em;
+}
+
+.push,footer{
+  height: 5em;
+}
+
+
+.n42-hero-text{
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  //color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 
 .n42-footer{
   font-size: 0.8em;
@@ -16,6 +59,10 @@ $navbar-background: red;
   span{
     color: $red-color
   }
+}
+
+.n42-navbar{
+  z-index: 1000;
 }
 
 .n42-hero{
@@ -39,6 +86,10 @@ $navbar-background: red;
 
 .n42-avatar h2{
   margin-top: 10px;
+}
+
+.collapsable > li > a{
+    height: 2.2em;
 }
 
 
