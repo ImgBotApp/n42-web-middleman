@@ -5,70 +5,57 @@ preview_description: TechBase, c/o Number42, 93053 Regensburg
 ---
 
 
-nav.navbar.navbar-default.navbar-fixed-top role="navigation"
-  .container-fluid
-    /! Brand and toggle get grouped for better mobile display
-    .navbar-header
-      a.navbar-brand href="index.html"
-        = image_tag "logo.svg", alt: "Number42"
+nav class="uk-navbar-container n42-navbar" uk-navbar=''
+  div.uk-navbar-left
+    ul.uk-navbar-nav
+      li
+        a href="index.html"
+          = image_tag "logo.svg", alt: "Number42"
+/ nav.navbar.navbar-default.navbar-fixed-top role="navigation"
+/   .container-fluid
+/     /! Brand and toggle get grouped for better mobile display
+/     .navbar-header
+/       a.navbar-brand href="index.html"
+/         = image_tag "logo.svg", alt: "Number42"
+div.uk-container
+  div.uk-grid.uk-flex-center
+    div class="uk-width-xxlarge@l uk-width-xlarge@m uk-width-large@s uk-width-medium"
+      h2. Adresse
 
-.region.region-light#imprint
-  .container
-    .row.space-header
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        i.icon.icon-medium.ion-ios-location.font-red.float-left
-        h2.space-l.float-left Adresse
-        
+      p
+        | TechBase
+        br
+        | c/o Number42 GmbH
+        br
+        | Franz-Mayer-Str. 1
+        br
+        | 93053 Regensburg
 
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        p.space-xl
-          | TechBase
-          br
-          | c/o Number42
-          br
-          | 93053 Regensburg
-      
-    
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        h2.space-l So finden Sie uns in der TechBase
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        p.space-xl Unsere Büroräumlichkeiten sind auf die Zimmer 2.006, 2.008, 2.010 und 2.011 verteilt. Diese befinden sich im zweiten Stock auf der Westseite der TechBase. Wenn Sie das Gebäude durch den Haupteingang betreten, fahren Sie mit dem Aufzug in den zweiten Stock. Im Vorraum befindet sich ein Telefon, leider können Sie ohne Schlüssel ab hier nicht weiter. Wählen Sie hier die 5201 (Die Telefonnummer steht auch auf der Infotafel im Vorraum) und Sie werden direkt mit uns verbunden. Wir holen Sie anschließend ab und führen Sie zu den Büros.
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        i.icon.icon-medium.ion-android-bus.font-red.float-left
-        h2.space-l.float-left Anfahrt mit dem Bus
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        p.space-xl Nur wenige Meter vor dem Hauptbahnhof befindet sich der Busbahnhof in der Albertstraße. Hier können Sie die Buslinie 6 Richtung Klinikum nehmen. Die Haltestelle heißt "TechCampus/OTH“.  Von der Haltestelle aus sehen Sie schon die TechBase, das große Glasgebäude auf der gegenüberliegenden Straßenseite, in welcher wir unsere Büroräume haben.
-      
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        i.icon.icon-medium.ion-android-car.font-red.float-left
-        h2.space-l.float-left Anfahrt mit dem Auto
-        
-    .row
-      .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1
-        h3  Vom Kreuz Regensburg kommend
-        ol
-          li Am Autobahnkreuz Regensburg auf die A 3 Richtung "Regensburg-Ost/Passau" 
-          li Autobahn an der Ausfahrt 100a "Regensburg-Klinikum" verlassen
-          li Biegen Sie an der 1. Ampel rechts ab in Richtung Universität (Franz-Josef-Strauß-Allee)
-          li Biegen Sie an der 2. Ampel rechts ab in Richtung Universität und bleiben Sie auf der Galgenbergstraße
-          li Nach ca. 1,5 km befindet sich die TechBase (großer Glaskomplex) auf der rechten Seite
-          li Biegen Sie direkt davor rechts in die Franz-Mayer-Straße ein
-          li Parken Sie auf dem ausgeschilderten Besucherparkplatz
-          li Hier können Sie durch die Schranke einfach hineinfahren
-          li Einen Chip zum Herrausfahren bekommen Sie von uns
-        
-        h3 Von Passau kommend
-        ol.space-xl
-          li Autobahn an der Ausfahrt 100a "Regensburg-Klinikum" verlassen
-          li Biegen Sie rechts ab in Richtung Universität und bleiben Sie auf der Galgenbergstraße
-          li Nach ca. 1,5 km befindet sich die TechBase (großer Glaskomplex) auf der rechten Seite
-          li Biegen Sie direkt davor rechts in die Franz-Mayer-Straße ein
-          li Parken Sie auf dem ausgeschilderten Besucherparkplatz
-          li Hier können Sie durch die Schranke einfach hineinfahren
-          li Einen Chip zum Herrausfahren bekommen Sie von uns
+
+      h2 So finden Sie uns in der TechBase
+      p Unsere Büroräumlichkeiten sind auf die Zimmer 2.006, 2.008, 2.010 und 2.011 verteilt. Diese befinden sich im zweiten Stock auf der Westseite der TechBase. Wenn Sie durch den Haupteingang reinkommen, fahren Sie mit dem Aufzug in den zweiten Stock. In dem Vorraum befindet sich ein Telefon, leider können Sie ohne Schlüssel ab hier nicht weiter. Wählen Sie hier die 5201 (Telefonnummer steht auch auf der Infotafel im Vorraum) und Sie werden direkt mit uns verbunden. Wir holen Sie dann gerne vorne ab.
+
+      h2 Anfahrt mit dem Bus
+      p Vor dem Hauptbahnhof befindet sich der Busbahnhof in der Albertstraße von dort aus können Sie die Buslinie 6 Richtung Klinikum nehmen. Die Haltestelle heißt "TechCampus" und befindet sich direkt an der TechBase (das große Glasgebäude auf der anderen Straßenseite), in welcher wir unsere Büroräume haben.
+
+      h2 Anfahrt mit dem Auto
+
+      h3  Vom Kreuz Regensburg kommend
+      ol
+        li Am Autobahnkreuz Regensburg auf die A 3 Richtung "Regensburg-Ost/Passau".
+        li Autobahn an der Ausfahrt 100a "Regensburg-Klinikum" verlassen.
+        li Biegen Sie an der 1. Ampel rechts ab in Richtung Universität (Franz-Josef-Strauß-Allee).
+        li Biegen Sie an der 2. Ampel rechts ab in Richtung Universität und bleiben Sie auf der Galgenbergstraße.
+        li Nach ca. 1,5 km befindet sich die TechBase (Glasgebäude) auf der rechten Seite.
+        li Biegen Sie direkt davor rechts in die Franz-Mayer-Straße ein.
+        li Parken Sie auf dem ausgeschilderten Besucherparkplätzen.
+        li Die Schranke öffnet sich automatisch. Einen Ausfahrtchip bekommen Sie von uns.
+
+      h3 Von Passau kommend
+      ol
+        li Autobahn an der Ausfahrt 100a "Regensburg-Klinikum" verlassen.
+        li Biegen Sie rechts ab in Richtung Universität und bleiben Sie auf der Galgenbergstraße.
+        li Nach ca. 1,5 km befindet sich die TechBase (Glasgebäude) auf der rechten Seite.
+        li Biegen Sie direkt davor rechts in die Franz-Mayer-Straße ein.
+        li Parken Sie auf dem ausgeschilderten Besucherparkplätzen.
+        li Die Schranke öffnet sich automatisch. Einen Ausfahrtchip bekommen Sie von uns.

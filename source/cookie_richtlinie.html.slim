@@ -6,28 +6,22 @@ preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entw
 ---
 
 
-nav.navbar.navbar-default.navbar-fixed-top role="navigation"
-  .container-fluid
-    /! Brand and toggle get grouped for better mobile display
-    .navbar-header
-      a.navbar-brand href="index.html"
-        = image_tag "logo.svg", alt: "Number42"
+div uk-sticky=''
+  nav class="uk-navbar-container n42-navbar" uk-navbar=''
+    div.uk-navbar-left
+      ul.uk-navbar-nav
+        li
+          a href="index.html"
+            = image_tag "logo.svg", alt: "Number42"
 
-  
-.region.region-light#privacy
-  .container
-    .row
-      .col-md-12
-        .space-header
-        h2 Cookie-Richtlinie
+section.uk-section
+  div.uk-container
+    h2 Cookie-Richtlinie
 
-        P 
-          | Es werden auf dieser Webseite ausschließlich Cookies durch Google-Analytics erzeugt und verwendet. Weitere Details hierzu entnehmen Sie bitte den
-          a href="http://www.google.com/intl/de/analytics/learn/privacy.html" rel="nofollow" target="_blank"  Google Analytics Bedingungen.
-        p
-          | Sie können die Speicherung der Cookies durch die entsprechende Einstellung Ihres Web-Browsers verhindern. Sie können zudem folgendes Browser=Plugin herunterladen und installieren, das die Verarbeitung der Daten durch Google verhindern:
-        p.space-l
-          a href="http://tools.google.com/dlpage/gaoptout?hl=de"  http://tools.google.com/dlpage/gaoptout?hl=de
-        
-
-              
+    P
+      | Es werden auf dieser Webseite ausschließlich Cookies durch Google-Analytics erzeugt und verwendet. Weitere Details hierzu entnehmen Sie bitte den
+      a href="http://www.google.com/intl/de/analytics/learn/privacy.html" rel="nofollow" target="_blank"  Google Analytics Bedingungen.
+    p
+      | Sie können die Speicherung der Cookies durch die entsprechende Einstellung Ihres Web-Browsers verhindern. Sie können zudem folgendes Browser=Plugin herunterladen und installieren, das die Verarbeitung der Daten durch Google verhindern:
+    p
+      a href="http://tools.google.com/dlpage/gaoptout?hl=de"  http://tools.google.com/dlpage/gaoptout?hl=de

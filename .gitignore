@@ -19,3 +19,8 @@
 
 # Ignore local Screenshots
 /responsive_screenshots
+
+/node_modules
+/.tmp
+/.vscode
+/dist

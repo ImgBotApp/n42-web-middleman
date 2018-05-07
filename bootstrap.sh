@@ -3,24 +3,25 @@
 # exit script, if error
 set -e
 
-# defne colors
+# define colors
 RED=`tput setaf 1`
 GREEN=`tput setaf 2`
 NOCOLOR=`tput sgr0`
 
-BOOTSTRAP_SOURCE="https://raw.githubusercontent.com/num42/n42-ios-bootstrap-shell/master/bootstrap.sh"
+SCRIPT_FILE="bootstrap.sh"
+SCRIPT_SOURCE="https://raw.githubusercontent.com/num42/n42-buildscripts/master/${SCRIPT_FILE}"
 
-echo "${GREEN}Running N42 Bootstrap v1.14 (2017-02-20)${NOCOLOR}"
-echo "${GREEN}If the script fails, there might be a newer Version on $BOOTSTRAP_SOURCE ${NOCOLOR}"
-echo "${GREEN}You can directly download it with 'curl -L $BOOTSTRAP_SOURCE -o bootstrap.sh' ${NOCOLOR}"
-echo "${GREEN}You can update the script by running "sh bootstrap.sh -u"' ${NOCOLOR}"
+echo "${GREEN}Running N42 Bootstrap v1.40 (2018-03-26)${NOCOLOR}"
+echo "${GREEN}If the script fails, there might be a newer Version on $SCRIPT_SOURCE ${NOCOLOR}"
+echo "${GREEN}You can directly download it with 'curl -L $SCRIPT_SOURCE -o ${SCRIPT_FILE}' ${NOCOLOR}"
+echo "${GREEN}You can update the script by running "sh ${SCRIPT_FILE} -u"' ${NOCOLOR}"
 
 
 if [[ $1 == "-u" ]] ; then
-    echo ""
-    echo  "${GREEN} Updating bootstrap.sh ${NOCOLOR}";
-    curl -L $BOOTSTRAP_SOURCE?$(date +%s) -o $0
-    exit 1
+  echo ""
+  echo  "${GREEN} Updating ${SCRIPT_FILE} ${NOCOLOR}";
+  curl -L $SCRIPT_SOURCE?$(date +%s) -o $0
+  exit 1
 fi
 
 # Guard to update brew only once and only if necessary
@@ -46,6 +47,21 @@ installDependencyWithBrew(){
   brew outdated $1 || brew upgrade $1 || echo "${RED} FAILED TO UPGRADE $1 ${NOCOLOR}";
 }
 
+installYarn(){
+  echo ""
+  echo "${GREEN} INSTALLING YARN ${NOCOLOR}"
+  echo 'If you have trouble with yarn, add this to your ~/.bashrc | ~/.zshrc'
+  echo 'export PATH="$HOME/.yarn/bin:$PATH"'
+
+  (curl -o- -L https://yarnpkg.com/install.sh | bash ) || echo "${RED} FAILED TO INSTALL YARN ${NOCOLOR}"
+}
+
+if [ \( -e ".env-sample" \) -a \( ! -e ".env" \) ]; then
+  echo ""
+  echo  "${GREEN} Copying .env-sample to .env ${NOCOLOR}";
+  cp .env-sample .env
+fi
+
 if [ -e ".ruby-version" ]; then
   echo ""
   echo  "${GREEN} SETTING UP RUBY ${NOCOLOR}";
@@ -61,8 +77,16 @@ if [ -e "Gemfile" ]; then
   echo  "${GREEN} INSTALLING GEMS ${NOCOLOR}";
 
   # install bundler gem for ruby dependency management
-  gem install bundler || echo "${RED} FAILED TO INSTALL BUNDLER ${NOCOLOR}";
+  gem install bundler --no-document || echo "${RED} FAILED TO INSTALL BUNDLER ${NOCOLOR}";
   bundle install || echo "${RED} FAILED TO INSTALL BUNDLE ${NOCOLOR}";
+fi
+
+if [ -e "package.json" ]; then
+  echo ""
+  echo  "${GREEN} INSTALLING node-modules ${NOCOLOR}";
+
+  which yarn || installYarn
+  yarn install || echo "${RED} FAILED TO INSTALL NODE-MODULES ${NOCOLOR}";
 fi
 
 if [ -e "podfile" ]; then
@@ -88,15 +112,6 @@ if [ -e ".gitmodules" ]; then
   # keep submodules up to date, see https://git-scm.com/book/en/v2/Git-Tools-Submodules
   git submodule init || echo "${RED} FAILED TO INIT SUBMODULES ${NOCOLOR}";
   git submodule update || echo "${RED} FAILED TO UPDATE SUBMODULES ${NOCOLOR}";
-fi
-
-if [ -e "fastlane/Fastfile" ]; then
-  if bundle exec fastlane lanes | grep "match_all"; then
-    echo ""
-    echo  "${GREEN} SYNCING CERTIFICATES AND PROFILES ${NOCOLOR}";
-    # Run fastlane to ensure certs and profiles are installed
-    bundle exec fastlane ios match_all || echo "${RED} FAILED TO RUN MATCH ${NOCOLOR}";
-  fi
 fi
 
 if [ -e "bootstrap-specialized.sh" ]; then
