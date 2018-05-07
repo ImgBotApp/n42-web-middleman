@@ -5,10 +5,10 @@ preview_description:
 ---
 
 
-nav.uk-navbar.uk-navbar-container.n42-navbar class="uk-hidden@m"
+nav.uk-navbar.uk-navbar-container.n42-navbar.n42-mobile-nav class="uk-hidden@m"
   div.uk-navbar-left
     = link_to 'index.html', class:'uk-navbar-item uk-logo' do
-      = image_tag 'logo.svg', :width => '160'
+      = image_tag 'logo.svg', style:'width: 120px'
   div.uk-navbar-right
     a class="uk-navbar-toggle uk-navbar-toggle-icon" uk-toggle="" uk-navbar-toggle-icon=true href="#offcanvas-slide"
     #offcanvas-slide uk-offcanvas="overlay:true; flip: true;"
@@ -33,7 +33,7 @@ nav.uk-navbar.uk-navbar-container.n42-navbar class="uk-hidden@m"
 nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" class="uk-visible@m"
   div.uk-navbar-left
     = link_to 'index.html', class:'uk-navbar-item uk-logo' do
-      = image_tag 'logo.svg', :width => '160'
+      = image_tag 'logo.svg', style:'width: 160px'
 
   div.uk-navbar-right
     ul.uk-nav.uk-navbar-nav#nav class="uk-visible@m"
