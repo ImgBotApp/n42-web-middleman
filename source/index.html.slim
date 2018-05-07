@@ -310,92 +310,92 @@ section.uk-section.uk-text-center#kontakt
 
 
 
-.region
-  div#map_canvas style="height: 400px; width: 100%"
-
-
-  javascript:
-
-    function init_google_maps() {
-      var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
-      var mapCanvas = document.getElementById('map_canvas');
-      var mapOptions = {
-        center: hqLatlng,
-        zoom: 14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        draggable: false,
-        zoomControl: false,
-        scaleControl: false,
-        scrollwheel: false,
-        disableDoubleClickZoom: true,
-        disableDefaultUI: true
-      }
-      var map = new google.maps.Map(mapCanvas, mapOptions)
-      var marker = new google.maps.Marker({
-        position: hqLatlng,
-        map: map,
-        title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
-        icon: "images/42.svg"
-
-      });
-    }
-
-    function init_contact_form() {
-      $("#contact_button").click(function(){
-        $("#error_message").hide();
-
-        formArray = $("#contact_form").serializeArray();
-        form_valid = true;
-
-        $.each(formArray, function(i, v) {
-          if(v.name === "email") {
-            if (v.value != ""){
-              $(".contact-email").addClass("valid")
-            } else {
-              form_valid = false;
-              $(".contact-email").removeClass("valid")
-            }
-          }
-
-          if(v.name === "message") {
-            if (v.value != ""){
-              $(".contact-message").addClass("valid")
-            } else {
-              form_valid = false;
-              $(".contact-message").removeClass("valid")
-            }
-          }
-
-          if(v.name === "realname") {
-            if (v.value != ""){
-              $(".contact-name").addClass("valid")
-            } else {
-              form_valid = false;
-              $(".contact-name").removeClass("valid")
-            }
-          }
-        });
-
-        if(form_valid) {
-          $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
-            $("#thank_you_message").show();
-            $("#contact_form").hide();
-            $("#contact_button").hide();
-          }).fail(
-            function() {
-              $("#error_message").show();
-            }
-          );
-        };
-
-      });
-
-
-    }
-
-    function initialize() {
-      init_google_maps();
-      init_contact_form();
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
+/ .region
+/   div#map_canvas style="height: 400px; width: 100%"
+/
+/
+/   javascript:
+/
+/     function init_google_maps() {
+/       var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
+/       var mapCanvas = document.getElementById('map_canvas');
+/       var mapOptions = {
+/         center: hqLatlng,
+/         zoom: 14,
+/         mapTypeId: google.maps.MapTypeId.ROADMAP,
+/         draggable: false,
+/         zoomControl: false,
+/         scaleControl: false,
+/         scrollwheel: false,
+/         disableDoubleClickZoom: true,
+/         disableDefaultUI: true
+/       }
+/       var map = new google.maps.Map(mapCanvas, mapOptions)
+/       var marker = new google.maps.Marker({
+/         position: hqLatlng,
+/         map: map,
+/         title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
+/         icon: "images/42.svg"
+/
+/       });
+/     }
+/
+/     function init_contact_form() {
+/       $("#contact_button").click(function(){
+/         $("#error_message").hide();
+/
+/         formArray = $("#contact_form").serializeArray();
+/         form_valid = true;
+/
+/         $.each(formArray, function(i, v) {
+/           if(v.name === "email") {
+/             if (v.value != ""){
+/               $(".contact-email").addClass("valid")
+/             } else {
+/               form_valid = false;
+/               $(".contact-email").removeClass("valid")
+/             }
+/           }
+/
+/           if(v.name === "message") {
+/             if (v.value != ""){
+/               $(".contact-message").addClass("valid")
+/             } else {
+/               form_valid = false;
+/               $(".contact-message").removeClass("valid")
+/             }
+/           }
+/
+/           if(v.name === "realname") {
+/             if (v.value != ""){
+/               $(".contact-name").addClass("valid")
+/             } else {
+/               form_valid = false;
+/               $(".contact-name").removeClass("valid")
+/             }
+/           }
+/         });
+/
+/         if(form_valid) {
+/           $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
+/             $("#thank_you_message").show();
+/             $("#contact_form").hide();
+/             $("#contact_button").hide();
+/           }).fail(
+/             function() {
+/               $("#error_message").show();
+/             }
+/           );
+/         };
+/
+/       });
+/
+/
+/     }
+/
+/     function initialize() {
+/       init_google_maps();
+/       init_contact_form();
+/     }
+/
+/     google.maps.event.addDomListener(window, 'load', initialize);
