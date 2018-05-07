@@ -26,23 +26,24 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
 
   body class=page_classes
-    noscript
-      iframe src="https://www.googletagmanager.com/ns.html?idGTM-M8P9B3" height="0" width="0" style="display:none;visibility:hidden"
-    div.wrapper
-      = yield
+    div.uk-offcanvas-content
+      noscript
+        iframe src="https://www.googletagmanager.com/ns.html?idGTM-M8P9B3" height="0" width="0" style="display:none;visibility:hidden"
+      div.wrapper
+        = yield
 
-      div.push
-    footer.n42-footer
-      div.uk-section.uk-section-muted.uk-text-center.uk-padding-small
-       div.uk-container.uk-margin-top
-          p
-            = link_to "Impressum", "impressum.html"
-            |&nbsp;|&nbsp;
-            = link_to "Datenschutzerklärung", "datenschutz.html"
-            |&nbsp;|&nbsp;
-            = link_to "Cookie-Richtline", "cookie_richtlinie.html"
-            br
-            | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
+        div.push
+      footer.n42-footer
+        div.uk-section.uk-section-muted.uk-text-center.uk-padding-small
+         div.uk-container.uk-margin-top
+            p
+              = link_to "Impressum", "impressum.html"
+              |&nbsp;|&nbsp;
+              = link_to "Datenschutzerklärung", "datenschutz.html"
+              |&nbsp;|&nbsp;
+              = link_to "Cookie-Richtline", "cookie_richtlinie.html"
+              br
+              | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
 
 
     / javascript:

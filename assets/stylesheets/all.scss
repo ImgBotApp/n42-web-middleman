@@ -7,7 +7,6 @@
 @import "font";
 
 $red-color: #D24335;
-$navbar-background: red;
 
 html,body{
   height: 100%;
@@ -65,6 +64,10 @@ body {
   z-index: 1000;
 }
 
+.n42-mobile-nav {
+  height: 60px;
+}
+
 .n42-hero{
   margin-top: -80px;
 }
@@ -80,8 +83,24 @@ body {
 .n42-text-shadow-light{
   text-shadow:  2px 2px 4px #00000033, 2px 2px 15px #00000069;
 }
+
 .n42-height-large{
   height: 700px;
+}
+@media (max-width: 940px){
+  .n42-height-large{
+    height: 600px;
+  }
+}
+@media (max-width: 600px){
+  .n42-height-large{
+    height: 500px;
+  }
+}
+@media (max-width: 400px){
+  .n42-height-large{
+    height: 300px;
+  }
 }
 
 .n42-avatar h2{
