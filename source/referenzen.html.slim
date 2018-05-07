@@ -5,39 +5,15 @@ preview_description:
 ---
 
 
-div.uk-offcanvas-content
-    nav.uk-navbar.uk-navbar-container.n42-navbar class="uk-hidden@m"
-      div.uk-navbar-left
-        = link_to 'index.html', class:'uk-navbar-item uk-logo' do
-          = image_tag 'logo.svg', :width => '160'
-      div.uk-navbar-right
-        a class="uk-navbar-toggle uk-navbar-toggle-icon" uk-toggle="" uk-navbar-toggle-icon=true href="#offcanvas-slide"
-        #offcanvas-slide uk-offcanvas="overlay:true; flip: true;"
-          .uk-offcanvas-bar
-            ul.uk-nav.uk-nav-default.collapsable#nav
-              li
-                = link_to "Leistungen", "index.html#leistungen"
-              li
-                = link_to "Team", "index.html#team"
-              li
-                = link_to "Jobs", "index.html#jobs"
-              li
-                = link_to "Prozess", "index.html#prozess"
-              li
-                = link_to "42Stacks", "index.html#42stacks"
-              li
-                = link_to "Referenzen", "referenzen.html"
-              li
-                = link_to "Kontakt", "index.html#kontakt"
-
-
-    nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" class="uk-visible@m"
-      div.uk-navbar-left
-        = link_to 'index.html', class:'uk-navbar-item uk-logo' do
-          = image_tag 'logo.svg', :width => '160'
-
-      div.uk-navbar-right
-        ul.uk-nav.uk-navbar-nav#nav class="uk-visible@m"
+nav.uk-navbar.uk-navbar-container.n42-navbar class="uk-hidden@m"
+  div.uk-navbar-left
+    = link_to 'index.html', class:'uk-navbar-item uk-logo' do
+      = image_tag 'logo.svg', :width => '160'
+  div.uk-navbar-right
+    a class="uk-navbar-toggle uk-navbar-toggle-icon" uk-toggle="" uk-navbar-toggle-icon=true href="#offcanvas-slide"
+    #offcanvas-slide uk-offcanvas="overlay:true; flip: true;"
+      .uk-offcanvas-bar
+        ul.uk-nav.uk-nav-default.collapsable#nav
           li
             = link_to "Leistungen", "index.html#leistungen"
           li
@@ -52,6 +28,29 @@ div.uk-offcanvas-content
             = link_to "Referenzen", "referenzen.html"
           li
             = link_to "Kontakt", "index.html#kontakt"
+
+
+nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" class="uk-visible@m"
+  div.uk-navbar-left
+    = link_to 'index.html', class:'uk-navbar-item uk-logo' do
+      = image_tag 'logo.svg', :width => '160'
+
+  div.uk-navbar-right
+    ul.uk-nav.uk-navbar-nav#nav class="uk-visible@m"
+      li
+        = link_to "Leistungen", "index.html#leistungen"
+      li
+        = link_to "Team", "index.html#team"
+      li
+        = link_to "Jobs", "index.html#jobs"
+      li
+        = link_to "Prozess", "index.html#prozess"
+      li
+        = link_to "42Stacks", "index.html#42stacks"
+      li
+        = link_to "Referenzen", "referenzen.html"
+      li
+        = link_to "Kontakt", "index.html#kontakt"
 
 
 section.uk-section.uk-text-center
@@ -76,7 +75,7 @@ section.uk-section.uk-section-muted.n42-section-border
       div.uk-width-1-2 uk-scrollspy="cls: uk-animation-slide-right;"
         =image_tag "images/fwu.png"
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
           div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
               .uk-text-left
                 h2 BioBook NRW
@@ -103,7 +102,7 @@ section.uk-section.n42-section-border
             = link_to " 42Stacks", "https://www.42stacks.de"
             |-Katalogsystem die perfekte Lösung. Die Mehrsprachigkeit und die Darstellung der Produktvielfalt waren von besonderer Wichtigkeit. Die App umfasst zu jeder Maschine die Vorteile, technischen Daten, sowie Bildergalerien und Videos in einer Vielzahl von Sprachen.
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
           div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
               .uk-text-left
               h2 Horsch
@@ -131,7 +130,7 @@ section.uk-section.uk-section-muted.n42-section-border
       div.uk-width-1-2 uk-scrollspy="cls: uk-animation-slide-right;"
         =image_tag "images/ios_pure.png"
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
           div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
               .uk-text-left
               h2 PURE Gruppe
@@ -157,7 +156,7 @@ section.uk-section.n42-section-border
           p
             |Bei everfits, einem Outdoor-Fitness-Training-Anbieter, wurden der Mitglieder- und der Verwaltungsbereich neu gestaltet. Im Mitgliederbereich kann sich der Endnutzer zu einem Training an- und abmelden oder auch ein Abo abschließen. Über das Verwaltungssystem können die Betreiber von everfits Trainings erstellen und Trainer zuweisen, sowie sämtliche Verwaltungsaufgaben rund um die Nutzer durchführen.
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
       div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
         div.uk-text-left
           h2 everfits
@@ -180,7 +179,7 @@ section.uk-section.uk-section-muted.n42-section-border
       div.uk-width-1-2 uk-scrollspy="cls: uk-animation-slide-right;"
         =image_tag "images/saveTV.png"
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
       div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
         div.uk-text-left
           h2 Save.TV
@@ -203,7 +202,7 @@ section.uk-section.n42-section-border
           p
             |Für Ratisbona wurde ein Spiel für einen Messeauftritt mit Hilfe von Webtechnologien entwickelt. Ziel des Spiels ist es, die Lage von Orten in Deutschland möglichst genau zu bestimmen. Dem Kunden sollen so spielerisch die verschiedenen Standorte der Firma nähergebracht werden.
 
-    div.uk-grid.mb0 class="uk-hidden@s"
+    div class="uk-hidden@s"
       div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
         div.uk-text-left
           h2 Ratisbona
