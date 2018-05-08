@@ -94,11 +94,17 @@ body {
   }
 }
 @media (max-width: 600px){
+  .n42-hero h1{
+    font-size: 2.5em;
+  }
   .n42-height-large{
     height: 500px;
   }
 }
 @media (max-width: 400px){
+  .n42-hero h1{
+    font-size: 2em;
+  }
   .n42-height-large{
     height: 300px;
   }
