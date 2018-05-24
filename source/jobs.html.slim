@@ -5,17 +5,14 @@ preview_description: Du interessierst dich für Design oder Wirtschaft und suchs
 ---
 
 
-div uk-sticky=''
-  nav class="uk-navbar-container n42-navbar" uk-navbar=''
-    div.uk-navbar-left
-      ul.uk-navbar-nav
-        li
-          a href="index.html"
-            = image_tag "logo.svg", alt: "Number42"
 
-div.uk-container.uk-text-center
-  h1 Stellenausschreibungen
-  img.uk-width-1-2(src="images/WirSuchenDich.svg")
-  div.uk-text-left.uk-margin-large-top
-    = partial "jobs_empty"
-    = partial "jobs_footer"
+= partial 'nav'
+
+
+section.uk-section uk-height-viewport='offset-top: true; offset-bottom: true;'
+  div.uk-container.uk-text-center
+    h1 Stellenausschreibungen
+    img.uk-width-1-2(src="images/WirSuchenDich.svg")
+    div.uk-text-left.uk-margin-large-top
+      = partial "jobs_empty"
+      = partial "jobs_footer"

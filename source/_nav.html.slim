@@ -1,0 +1,50 @@
+
+div
+  nav.uk-navbar.uk-navbar-container.n42-navbar.n42-mobile-nav uk-navbar='' uk-sticky='' class="uk-hidden@m"
+    div.uk-navbar-left
+      = link_to 'index.html', class:'uk-navbar-item uk-logo' do
+        = image_tag 'logo.svg', style:'width: 120px'
+    div.uk-navbar-right
+      a class="uk-navbar-toggle uk-navbar-toggle-icon" uk-toggle="" uk-navbar-toggle-icon=true href="#offcanvas-slide"
+
+  #offcanvas-slide uk-offcanvas="overlay: true; flip: true;"
+    .uk-offcanvas-bar
+      ul.uk-nav.uk-nav-default.collapsable#nav
+        li
+          = link_to 'Leistungen', "/#leistungen"
+        li
+          = link_to 'Team', "/#team"
+        li
+          = link_to 'Jobs', "/#jobs"
+        li
+          = link_to 'Prozess', "/#prozess"
+        li
+          = link_to '42Stacks', "/#stacks"
+        li
+          = link_to "Referenzen", "referenzen.html"
+        li
+          = link_to 'Kontakt', "/#kontakt"
+
+
+
+  nav.uk-navbar.uk-navbar-container.n42-navbar uk-navbar="" uk-sticky='' class="uk-visible@m"
+    div.uk-navbar-left
+      = link_to 'index.html', class:'uk-navbar-item uk-logo' do
+        = image_tag 'logo.svg', style:'width: 160px'
+
+    div.uk-navbar-right
+      ul.uk-nav.uk-navbar-nav#nav class="uk-visible@m"
+        li
+          = link_to 'Leistungen', "/#leistungen"
+        li
+          = link_to 'Team', "/#team"
+        li
+          = link_to 'Jobs', "/#jobs"
+        li
+          = link_to 'Prozess', "/#prozess"
+        li
+          = link_to '42Stacks', "/#stacks"
+        li
+          = link_to "Referenzen", "referenzen.html"
+        li
+          = link_to 'Kontakt', "/#kontakt"

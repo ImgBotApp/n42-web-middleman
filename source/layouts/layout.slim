@@ -5,7 +5,9 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1" name="viewport"
     link rel="shortcut icon" href="#{image_path('favicon.png')}"
-    title= current_page.data.title || "42"
+    title= current_page.data.title || "Number42"
+    - if current_page.data.robots.present?
+      meta name="robots" content=current_page.data.robots
     meta property="og:image" content= current_page.data.preview_image
     meta property="og:description" content= current_page.data.preview_description
     // javascript:
@@ -49,19 +51,16 @@ html lang="en" prefix="og: http://ogp.me/ns#"
     div.uk-offcanvas-content
       / noscript
       /   iframe src="https://www.googletagmanager.com/ns.html?idGTM-M8P9B3" height="0" width="0" style="display:none;visibility:hidden"
-      div.wrapper
-        = yield
 
-        div.push
+      = yield
+
       footer.n42-footer
         div.uk-section.uk-section-muted.uk-text-center
          div.uk-container.uk-margin-top
             p
-              = link_to "Impressum", "impressum.html"
+              = link_to "Impressum", "imprint.html"
               |&nbsp;|&nbsp;
-              = link_to "Datenschutzerklärung", "datenschutz.html"
-              |&nbsp;|&nbsp;
-              = link_to "Cookie-Richtline", "cookie_richtlinie.html"
+              = link_to "Datenschutzerklärung", "privacy.html"
               br
               | Made with <span uk-icon="icon: heart; ratio: 0.7"></span> in Bavaria
 
