@@ -1,20 +1,15 @@
 ---
 title: Number42 Impressum
+robots: noindex
 preview_image: logo_512.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 
 ---
 
+= partial 'nav'
 
-div uk-sticky=''
-  nav class="uk-navbar-container n42-navbar" uk-navbar=''
-    div.uk-navbar-left
-      ul.uk-navbar-nav
-        li
-          a href="index.html"
-            = image_tag "logo.svg", alt: "Number42"
 
-section.uk-section
+section.uk-section uk-height-viewport='offset-top: true; offset-bottom: true'
   div.uk-container
     h2 Impressum
 
@@ -43,7 +38,7 @@ section.uk-section
       |Handelsregister-Nr.: HRB 16147
       br
       |USt-IdNr. DE 313 579 989
-
+    p Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Daniel Dengler (Franz-Mayer-Straße 1, 93053 Regensburg)
     p
       |Bildrechte im dargestellten PURE Beispielstack
       a href='http://www.florianhammerich.com/portfolio/restaurant-storstad/?id=851'
