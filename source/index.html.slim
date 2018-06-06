@@ -4,8 +4,6 @@ preview_image: images/og_image.png
 preview_description: Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf, sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung. Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
 ---
 
-
-
 nav.uk-navbar.uk-navbar-container.n42-navbar.n42-mobile-nav uk-navbar='' uk-sticky='' class="uk-hidden@m"
   div.uk-navbar-left
     = link_to 'index.html', class:'uk-navbar-item uk-logo' do
@@ -71,24 +69,27 @@ div.uk-cover-container.n42-height-large.n42-red-border.n42-hero
   img(src="images/header.jpg" uk-cover )
   div.uk-overlay.uk-light.n42-text-shadow-light.n42-hero-text
     h1
-      | Die Antwort auf
+      | Die Antwort auf Ihre App Idee.
       br
-      | Ihre App Idee.
+      | Mit Beratung zum Erfolg.
 div.uk-section#leistungen.n42-section-border
   div.uk-container
-    div(class="uk-child-width-1-1 uk-child-width-1-4@m uk-grid uk-text-center uk-flex-around uk-margin-medium-top" uk-grid)
+    div (class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid uk-text-center uk-flex-around uk-margin-medium-top" uk-grid)
       div
-        span.n42-text-red uk-icon="icon: phone; ratio: 3"
-        h2 Mobile Entwicklung
+        span.n42-text-red uk-icon="icon: heart; ratio: 3"
+        h2 Beratung
         p
-          | Einfach bedienbar, ständig verfügbar und optimal auf den Nutzer abgestimmt.
-          |  Egal ob für Smartphone oder Tablet, iOS oder Android, wir wissen, was Apps ausmacht – und setzen das auch um.
+          | Sie haben eine Idee für eine App, aber brauchen noch das technische Know-how?
+          br
+          a href="#beratung" uk-scroll='duration: 200; offset: 20'
+            | Das können wir Ihnen bieten.
       div
         span.n42-text-red uk-icon="icon: desktop; ratio: 3"
-        h2 Web Entwicklung
-        p.
-          | Ob Webanwendungen mit durchdachter Usability, responsive Webseiten oder
-          |  komplexe Backend-Systeme, wir finden für Sie genau die Lösung, die Sie brauchen.
+        h2 Entwicklung
+        p
+          | Egal ob iOS, Android oder Web, wir wissen, was Apps ausmacht – und setzen das für Sie um. 
+          a href="#entwicklung" uk-scroll='duration: 200; offset: 20'
+            | Mehr über unsere Technologien und den Entwicklungsprozess.
 
 div.uk-section.uk-section-muted#team.n42-section-border
   div.uk-container
@@ -184,36 +185,44 @@ div.uk-section.uk-section-muted#team.n42-section-border
               = image_tag "avatar_jmah_v4c.png"
         h3.uk-margin-small-top.uk-margin-bottom Johannes Mahr
 
-    p.uk-margin-medium-top.uk-text-center
-      | Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf,
-      |  sondern unsere Berufung. Wenn wir zusammen Ihre Idee entwicklen fühlen wir uns wie Erfinder, wenn wir dabei
-      |  mit den neuesten Technologien programmieren wie Ingenieure und wenn wir Ihrem Produkt ein unverkennbares Design
-      |  verpassen wie Künstler. Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung.
+    p.uk-margin-medium-top.uk-text-center  
+      |  Wir sind Entwickler aus Leidenschaft. Für uns ist die Entwicklung von Web- und Mobile-Anwendungen nicht nur unser Beruf,
+      |  sondern unsere Berufung. Durch unsere kurzen Kommunikationswege können wir agil arbeiten und schnell auf Ihre Wünsche eingehen. 
+      |  Wir sind vielfältig aufgestellt und jeder Mitarbeiter bringt seine individuellen Stärken mit ein. 
+      |  Von der Beratung, der Kundenbetreuung über das Design bis hin zur Entwicklung gibt es bei uns für jeden Bereich mehrere Experten. 
+      |  Wir begleiten Sie von der ersten Idee bis zur Veröffentlichung.
       |  Wir sind nicht nur irgendeine Agentur, wir machen Ihr Produkt einzigartig.
-
-
-div.uk-section#jobs.n42-section-border
+    
+div.uk-section#beratung.n42-section-border
   .uk-container.uk-text-center
-    h1 Jobs
-    p
-      |Im Moment haben wir keine Stellen ausgeschrieben.
-      br
-      |Wir freuen uns dennoch über Initiativbewerbungen oder ein einfaches "Hi, hier bin ich".
-
-
-div.uk-section.uk-section-muted.uk-text-center#prozess.n42-section-border
-  h1 Prozess
-  .uk-container
+    h1 Beratung
+    p.space-xl Wir kennen die gängigen Probleme bei der Umsetzung von App-Ideen. Kunden kommen mit einer ausgearbeiteten Idee und wollen dann nur noch die Entwicklung des Produkts. Die technischen Machbarkeit wird dabei oft außer Acht gelassen. Der Auslöser dafür ist meist ein zu großer Funktionsumfang, mit einem dafür zu geringen Budget, bei zu wenig Zeit. 
+    
     .uk-grid (class="uk-child-width-1-1 uk-child-width-1-4@m")
       div
-        i.icon.ion-ios-compose-outline.n42-icons
-        h2.uk-margin-remove-top Beratung
-        p.uk-margin-large-bottom
-          | Sie sind Experte in Ihrem Bereich, wir in unserem. Darum setzen wir auf eine gemeinsame Ausarbeitung Ihrer Idee, so dass Sie ein Ergebnis erhalten, das funktioniert.
+        h2 Was?
+        p.uk-margin-large-bottom Sie und Ihre Idee stehen natürlich weiterhin im Mittelpunkt. Unsere Aufgabe ist es Ihnen mit unserem technischen Verständnissen unter die Arme zu greifen.
+      div
+        h2 Wann?
+        p.uk-margin-large-bottom Der beste Zeitpunkt um uns zu kontaktieren ist ganz am Anfang. Denn dann können wir gemeinsam mit Ihnen an Ihrer Idee feilen und die beste Möglichkeit ausarbeiten.
+      
+      div
+        h2 Wie?
+        p.uk-margin-large-bottom Wir bieten Ihnen neben einem ersten kostenlosen Workshop, eine darauf aufbauende Aufwandsschätzung und erstellen dann für Sie ein unverbindliches Angebot.
+        / Natürlich soll Ihre App am besten alles können. Besser ist es aber zunächst in kleinen Schritten die Funktionen auszubauen. So kann schnell ein erstes funktionsfähiges Produkt enstehen, welches dann an die Bedürfnisse der Nutzer angepasst werden kann.
 
       div
+        h2 Warum?
+        p.uk-margin-large-bottom Damit Sie sich viel Ärger und Zeit sparen und ein Produkt erhalten, dass auf Sie und Ihre Kunden zugeschnitten ist und auch in vollem Umfang funktioniert.
+
+
+div.uk-section.uk-section-muted#entwicklung.n42-section-border
+  div.uk-container
+    h1.uk-text-center.uk-margin-medium-bottom Entwicklung
+    .uk-grid (class="uk-child-width-1-1 uk-text-center uk-child-width-1-3@m")
+      div
         i.icon.ion-ios-gear-outline.n42-icons
-        h2.uk-margin-remove-top Entwicklung
+        h2.uk-margin-remove-top Implementierung
         p.uk-margin-large-bottom.space-xl
           | Ihr Produkt soll innovativ sein, also entwickeln wir auch so. Durch dynamisches Projektmanagement, unkomplizierte Kommunikation und der Nutzung neuester technologischer Standards machen wir für Sie und Ihr Produkt den Unterschied.
 
@@ -229,6 +238,7 @@ div.uk-section.uk-section-muted.uk-text-center#prozess.n42-section-border
         p.uk-margin-large-bottom.space-xl
           | Mit uns ist Ihr Produkt auf dem neuesten Stand und bleibt es auch. Egal ob zusätzliche Anforderungen entstehen, technologische Weiterentwicklungen nötig sind oder Ihre Anwendung einfach einen neuen Anstrich braucht.
 
+    
 div.uk-section.uk-text-center.n42-section-border
   h1 Technologie
   .uk-container
@@ -246,7 +256,7 @@ div.uk-section.uk-text-center.n42-section-border
       div
         i.icon.ion-social-android-outline.n42-icons
         h2.uk-margin-remove-top Android
-        p.uk-margin-large-bottom Nativ in Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
+        p.uk-margin-large-bottom Nativ in Kotlin oder Java oder in Kombination mit hybriden Elementen: für Ihre Android-App finden wir die perfekte Lösung.
 
 
 
@@ -277,8 +287,16 @@ section.uk-section.mb0.uk-section-muted.uk-padding-remove-bottom#stacks.n42-sect
     div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
       img src="images/home-4.png" class="uk-hidden@s"
 
+div.uk-section#jobs.n42-section-border
+  .uk-container.uk-text-center
+    h1 Jobs
+    p
+      |Im Moment haben wir keine Stellen ausgeschrieben.
+      br
+      |Wir freuen uns dennoch über Initiativbewerbungen oder ein einfaches "Hi, hier bin ich".
+  
 
-section.uk-section.uk-text-center#kontakt.n42-section-border
+section.uk-section.uk-text-center#kontakt.n42-section-border.uk-section-muted
   div.uk-container.uk-container-small.n42-container
     h1.n42-section-header Kontakt
     div.uk-margin
@@ -309,95 +327,3 @@ section.uk-section.uk-text-center#kontakt.n42-section-border
           br
           a.n42-link href="tel:+49 (0)941 / 20 00 08 70"
             |+49 (0)941 / 20 00 08 70
-
-
-
-/ .region
-/   div#map_canvas style="height: 400px; width: 100%"
-/
-/
-/   javascript:
-/
-/     function init_google_maps() {
-/       var hqLatlng = new google.maps.LatLng(49.002422,12.099918);
-/       var mapCanvas = document.getElementById('map_canvas');
-/       var mapOptions = {
-/         center: hqLatlng,
-/         zoom: 14,
-/         mapTypeId: google.maps.MapTypeId.ROADMAP,
-/         draggable: false,
-/         zoomControl: false,
-/         scaleControl: false,
-/         scrollwheel: false,
-/         disableDoubleClickZoom: true,
-/         disableDefaultUI: true
-/       }
-/       var map = new google.maps.Map(mapCanvas, mapOptions)
-/       var marker = new google.maps.Marker({
-/         position: hqLatlng,
-/         map: map,
-/         title:"Number42, Franz-Mayer-Straße 1, 93053 Regensburg",
-/         icon: "images/42.svg"
-/
-/       });
-/     }
-/
-/     function init_contact_form() {
-/       $("#contact_button").click(function(){
-/         $("#error_message").hide();
-/
-/         formArray = $("#contact_form").serializeArray();
-/         form_valid = true;
-/
-/         $.each(formArray, function(i, v) {
-/           if(v.name === "email") {
-/             if (v.value != ""){
-/               $(".contact-email").addClass("valid")
-/             } else {
-/               form_valid = false;
-/               $(".contact-email").removeClass("valid")
-/             }
-/           }
-/
-/           if(v.name === "message") {
-/             if (v.value != ""){
-/               $(".contact-message").addClass("valid")
-/             } else {
-/               form_valid = false;
-/               $(".contact-message").removeClass("valid")
-/             }
-/           }
-/
-/           if(v.name === "realname") {
-/             if (v.value != ""){
-/               $(".contact-name").addClass("valid")
-/             } else {
-/               form_valid = false;
-/               $(".contact-name").removeClass("valid")
-/             }
-/           }
-/         });
-/
-/         if(form_valid) {
-/           $.post("/system-cgi/formmail.pl", $("#contact_form").serialize()).done(function() {
-/             $("#thank_you_message").show();
-/             $("#contact_form").hide();
-/             $("#contact_button").hide();
-/           }).fail(
-/             function() {
-/               $("#error_message").show();
-/             }
-/           );
-/         };
-/
-/       });
-/
-/
-/     }
-/
-/     function initialize() {
-/       init_google_maps();
-/       init_contact_form();
-/     }
-/
-/     google.maps.event.addDomListener(window, 'load', initialize);
